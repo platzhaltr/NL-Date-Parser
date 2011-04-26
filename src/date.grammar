@@ -1,0 +1,44 @@
+Package com.platzhaltr.util.date;
+
+Tokens 
+	number = ['0' .. '9']+; 
+	plus = '+'; 
+	minus = '-'; 
+	mult = '*'; 
+	div = '/'; 
+	mod = '%'; 
+	l_par = '('; 
+	r_par = ')'; 
+	blank = (' ' | 13 | 10)+;
+
+Ignored Tokens 
+	blank;
+
+
+Productions
+ expr {-> expr} =
+	{factor} factor { -> factor.expr } |
+	{plus} expr plus factor { -> New expr.plus(expr.expr, factor.expr) } |
+	{minus} expr minus factor { -> New expr.minus(expr.expr, factor.expr) } ;
+
+factor {-> expr} = 
+	{term} term { -> term.expr } | 
+	{mult} factor mult term { -> New expr.mult(factor.expr, term.expr) } | 
+	{div} factor div term { -> New expr.div(factor.expr, term.expr) } | 
+	{mod} factor mod term { -> New expr.mod(factor.expr, term.expr) };
+
+term { -> expr } = 
+	{number} number { -> New expr.number(number) } | 
+	{expr} l_par expr r_par { -> expr.expr } ;
+	
+
+Abstract Syntax Tree
+
+expr =
+	{plus} [left]:expr [right]:expr |
+	{minus} [left]:expr [right]:expr |
+	{mult} [left]:expr [right]:expr | 
+	{div} [left]:expr [right]:expr | 
+	{mod} [left]:expr [right]:expr |
+	{number} T.number;
+	
