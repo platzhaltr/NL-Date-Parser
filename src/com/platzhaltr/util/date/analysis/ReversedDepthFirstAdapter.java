@@ -32,153 +32,642 @@ public class ReversedDepthFirstAdapter extends AnalysisAdapter
     {
         inStart(node);
         node.getEOF().apply(this);
-        node.getPExpr().apply(this);
+        node.getPEntry().apply(this);
         outStart(node);
     }
 
-    public void inAPlusExpr(APlusExpr node)
+    public void inANextEntry(ANextEntry node)
     {
         defaultIn(node);
     }
 
-    public void outAPlusExpr(APlusExpr node)
+    public void outANextEntry(ANextEntry node)
     {
         defaultOut(node);
     }
 
     @Override
-    public void caseAPlusExpr(APlusExpr node)
+    public void caseANextEntry(ANextEntry node)
     {
-        inAPlusExpr(node);
-        if(node.getRight() != null)
+        inANextEntry(node);
+        if(node.getTime() != null)
         {
-            node.getRight().apply(this);
+            node.getTime().apply(this);
         }
-        if(node.getLeft() != null)
+        if(node.getRelative() != null)
         {
-            node.getLeft().apply(this);
+            node.getRelative().apply(this);
         }
-        outAPlusExpr(node);
+        outANextEntry(node);
     }
 
-    public void inAMinusExpr(AMinusExpr node)
+    public void inARelativeEntry(ARelativeEntry node)
     {
         defaultIn(node);
     }
 
-    public void outAMinusExpr(AMinusExpr node)
+    public void outARelativeEntry(ARelativeEntry node)
     {
         defaultOut(node);
     }
 
     @Override
-    public void caseAMinusExpr(AMinusExpr node)
+    public void caseARelativeEntry(ARelativeEntry node)
     {
-        inAMinusExpr(node);
-        if(node.getRight() != null)
+        inARelativeEntry(node);
+        if(node.getTime() != null)
         {
-            node.getRight().apply(this);
+            node.getTime().apply(this);
         }
-        if(node.getLeft() != null)
+        if(node.getRelative() != null)
         {
-            node.getLeft().apply(this);
+            node.getRelative().apply(this);
         }
-        outAMinusExpr(node);
+        outARelativeEntry(node);
     }
 
-    public void inAMultExpr(AMultExpr node)
+    public void inADateEntry(ADateEntry node)
     {
         defaultIn(node);
     }
 
-    public void outAMultExpr(AMultExpr node)
+    public void outADateEntry(ADateEntry node)
     {
         defaultOut(node);
     }
 
     @Override
-    public void caseAMultExpr(AMultExpr node)
+    public void caseADateEntry(ADateEntry node)
     {
-        inAMultExpr(node);
-        if(node.getRight() != null)
+        inADateEntry(node);
+        if(node.getTime() != null)
         {
-            node.getRight().apply(this);
+            node.getTime().apply(this);
         }
-        if(node.getLeft() != null)
+        if(node.getDate() != null)
         {
-            node.getLeft().apply(this);
+            node.getDate().apply(this);
         }
-        outAMultExpr(node);
+        outADateEntry(node);
     }
 
-    public void inADivExpr(ADivExpr node)
+    public void inAMondayRelative(AMondayRelative node)
     {
         defaultIn(node);
     }
 
-    public void outADivExpr(ADivExpr node)
+    public void outAMondayRelative(AMondayRelative node)
     {
         defaultOut(node);
     }
 
     @Override
-    public void caseADivExpr(ADivExpr node)
+    public void caseAMondayRelative(AMondayRelative node)
     {
-        inADivExpr(node);
-        if(node.getRight() != null)
+        inAMondayRelative(node);
+        if(node.getMonday() != null)
         {
-            node.getRight().apply(this);
+            node.getMonday().apply(this);
         }
-        if(node.getLeft() != null)
-        {
-            node.getLeft().apply(this);
-        }
-        outADivExpr(node);
+        outAMondayRelative(node);
     }
 
-    public void inAModExpr(AModExpr node)
+    public void inAThuesdayRelative(AThuesdayRelative node)
     {
         defaultIn(node);
     }
 
-    public void outAModExpr(AModExpr node)
+    public void outAThuesdayRelative(AThuesdayRelative node)
     {
         defaultOut(node);
     }
 
     @Override
-    public void caseAModExpr(AModExpr node)
+    public void caseAThuesdayRelative(AThuesdayRelative node)
     {
-        inAModExpr(node);
-        if(node.getRight() != null)
+        inAThuesdayRelative(node);
+        if(node.getThuesday() != null)
         {
-            node.getRight().apply(this);
+            node.getThuesday().apply(this);
         }
-        if(node.getLeft() != null)
-        {
-            node.getLeft().apply(this);
-        }
-        outAModExpr(node);
+        outAThuesdayRelative(node);
     }
 
-    public void inANumberExpr(ANumberExpr node)
+    public void inAWednesdayRelative(AWednesdayRelative node)
     {
         defaultIn(node);
     }
 
-    public void outANumberExpr(ANumberExpr node)
+    public void outAWednesdayRelative(AWednesdayRelative node)
     {
         defaultOut(node);
     }
 
     @Override
-    public void caseANumberExpr(ANumberExpr node)
+    public void caseAWednesdayRelative(AWednesdayRelative node)
     {
-        inANumberExpr(node);
-        if(node.getNumber() != null)
+        inAWednesdayRelative(node);
+        if(node.getWednesday() != null)
         {
-            node.getNumber().apply(this);
+            node.getWednesday().apply(this);
         }
-        outANumberExpr(node);
+        outAWednesdayRelative(node);
+    }
+
+    public void inATuersdayRelative(ATuersdayRelative node)
+    {
+        defaultIn(node);
+    }
+
+    public void outATuersdayRelative(ATuersdayRelative node)
+    {
+        defaultOut(node);
+    }
+
+    @Override
+    public void caseATuersdayRelative(ATuersdayRelative node)
+    {
+        inATuersdayRelative(node);
+        if(node.getTuersday() != null)
+        {
+            node.getTuersday().apply(this);
+        }
+        outATuersdayRelative(node);
+    }
+
+    public void inAFridayRelative(AFridayRelative node)
+    {
+        defaultIn(node);
+    }
+
+    public void outAFridayRelative(AFridayRelative node)
+    {
+        defaultOut(node);
+    }
+
+    @Override
+    public void caseAFridayRelative(AFridayRelative node)
+    {
+        inAFridayRelative(node);
+        if(node.getFriday() != null)
+        {
+            node.getFriday().apply(this);
+        }
+        outAFridayRelative(node);
+    }
+
+    public void inASaturdayRelative(ASaturdayRelative node)
+    {
+        defaultIn(node);
+    }
+
+    public void outASaturdayRelative(ASaturdayRelative node)
+    {
+        defaultOut(node);
+    }
+
+    @Override
+    public void caseASaturdayRelative(ASaturdayRelative node)
+    {
+        inASaturdayRelative(node);
+        if(node.getSaturday() != null)
+        {
+            node.getSaturday().apply(this);
+        }
+        outASaturdayRelative(node);
+    }
+
+    public void inASundayRelative(ASundayRelative node)
+    {
+        defaultIn(node);
+    }
+
+    public void outASundayRelative(ASundayRelative node)
+    {
+        defaultOut(node);
+    }
+
+    @Override
+    public void caseASundayRelative(ASundayRelative node)
+    {
+        inASundayRelative(node);
+        if(node.getSunday() != null)
+        {
+            node.getSunday().apply(this);
+        }
+        outASundayRelative(node);
+    }
+
+    public void inAWeekendRelative(AWeekendRelative node)
+    {
+        defaultIn(node);
+    }
+
+    public void outAWeekendRelative(AWeekendRelative node)
+    {
+        defaultOut(node);
+    }
+
+    @Override
+    public void caseAWeekendRelative(AWeekendRelative node)
+    {
+        inAWeekendRelative(node);
+        if(node.getWeekend() != null)
+        {
+            node.getWeekend().apply(this);
+        }
+        outAWeekendRelative(node);
+    }
+
+    public void inAMonthRelative(AMonthRelative node)
+    {
+        defaultIn(node);
+    }
+
+    public void outAMonthRelative(AMonthRelative node)
+    {
+        defaultOut(node);
+    }
+
+    @Override
+    public void caseAMonthRelative(AMonthRelative node)
+    {
+        inAMonthRelative(node);
+        if(node.getMonth() != null)
+        {
+            node.getMonth().apply(this);
+        }
+        outAMonthRelative(node);
+    }
+
+    public void inAYearRelative(AYearRelative node)
+    {
+        defaultIn(node);
+    }
+
+    public void outAYearRelative(AYearRelative node)
+    {
+        defaultOut(node);
+    }
+
+    @Override
+    public void caseAYearRelative(AYearRelative node)
+    {
+        inAYearRelative(node);
+        if(node.getYear() != null)
+        {
+            node.getYear().apply(this);
+        }
+        outAYearRelative(node);
+    }
+
+    public void inALatinDate(ALatinDate node)
+    {
+        defaultIn(node);
+    }
+
+    public void outALatinDate(ALatinDate node)
+    {
+        defaultOut(node);
+    }
+
+    @Override
+    public void caseALatinDate(ALatinDate node)
+    {
+        inALatinDate(node);
+        {
+            List<TNumber> copy = new ArrayList<TNumber>(node.getNumber());
+            Collections.reverse(copy);
+            for(TNumber e : copy)
+            {
+                e.apply(this);
+            }
+        }
+        outALatinDate(node);
+    }
+
+    public void inAJanuaryDate(AJanuaryDate node)
+    {
+        defaultIn(node);
+    }
+
+    public void outAJanuaryDate(AJanuaryDate node)
+    {
+        defaultOut(node);
+    }
+
+    @Override
+    public void caseAJanuaryDate(AJanuaryDate node)
+    {
+        inAJanuaryDate(node);
+        {
+            List<TNumber> copy = new ArrayList<TNumber>(node.getNumber());
+            Collections.reverse(copy);
+            for(TNumber e : copy)
+            {
+                e.apply(this);
+            }
+        }
+        outAJanuaryDate(node);
+    }
+
+    public void inAFebruaryDate(AFebruaryDate node)
+    {
+        defaultIn(node);
+    }
+
+    public void outAFebruaryDate(AFebruaryDate node)
+    {
+        defaultOut(node);
+    }
+
+    @Override
+    public void caseAFebruaryDate(AFebruaryDate node)
+    {
+        inAFebruaryDate(node);
+        {
+            List<TNumber> copy = new ArrayList<TNumber>(node.getNumber());
+            Collections.reverse(copy);
+            for(TNumber e : copy)
+            {
+                e.apply(this);
+            }
+        }
+        outAFebruaryDate(node);
+    }
+
+    public void inAMarchDate(AMarchDate node)
+    {
+        defaultIn(node);
+    }
+
+    public void outAMarchDate(AMarchDate node)
+    {
+        defaultOut(node);
+    }
+
+    @Override
+    public void caseAMarchDate(AMarchDate node)
+    {
+        inAMarchDate(node);
+        {
+            List<TNumber> copy = new ArrayList<TNumber>(node.getNumber());
+            Collections.reverse(copy);
+            for(TNumber e : copy)
+            {
+                e.apply(this);
+            }
+        }
+        outAMarchDate(node);
+    }
+
+    public void inAAprilDate(AAprilDate node)
+    {
+        defaultIn(node);
+    }
+
+    public void outAAprilDate(AAprilDate node)
+    {
+        defaultOut(node);
+    }
+
+    @Override
+    public void caseAAprilDate(AAprilDate node)
+    {
+        inAAprilDate(node);
+        {
+            List<TNumber> copy = new ArrayList<TNumber>(node.getNumber());
+            Collections.reverse(copy);
+            for(TNumber e : copy)
+            {
+                e.apply(this);
+            }
+        }
+        outAAprilDate(node);
+    }
+
+    public void inAMayDate(AMayDate node)
+    {
+        defaultIn(node);
+    }
+
+    public void outAMayDate(AMayDate node)
+    {
+        defaultOut(node);
+    }
+
+    @Override
+    public void caseAMayDate(AMayDate node)
+    {
+        inAMayDate(node);
+        {
+            List<TNumber> copy = new ArrayList<TNumber>(node.getNumber());
+            Collections.reverse(copy);
+            for(TNumber e : copy)
+            {
+                e.apply(this);
+            }
+        }
+        outAMayDate(node);
+    }
+
+    public void inAJuneDate(AJuneDate node)
+    {
+        defaultIn(node);
+    }
+
+    public void outAJuneDate(AJuneDate node)
+    {
+        defaultOut(node);
+    }
+
+    @Override
+    public void caseAJuneDate(AJuneDate node)
+    {
+        inAJuneDate(node);
+        {
+            List<TNumber> copy = new ArrayList<TNumber>(node.getNumber());
+            Collections.reverse(copy);
+            for(TNumber e : copy)
+            {
+                e.apply(this);
+            }
+        }
+        outAJuneDate(node);
+    }
+
+    public void inAJulyDate(AJulyDate node)
+    {
+        defaultIn(node);
+    }
+
+    public void outAJulyDate(AJulyDate node)
+    {
+        defaultOut(node);
+    }
+
+    @Override
+    public void caseAJulyDate(AJulyDate node)
+    {
+        inAJulyDate(node);
+        {
+            List<TNumber> copy = new ArrayList<TNumber>(node.getNumber());
+            Collections.reverse(copy);
+            for(TNumber e : copy)
+            {
+                e.apply(this);
+            }
+        }
+        outAJulyDate(node);
+    }
+
+    public void inAAugustDate(AAugustDate node)
+    {
+        defaultIn(node);
+    }
+
+    public void outAAugustDate(AAugustDate node)
+    {
+        defaultOut(node);
+    }
+
+    @Override
+    public void caseAAugustDate(AAugustDate node)
+    {
+        inAAugustDate(node);
+        {
+            List<TNumber> copy = new ArrayList<TNumber>(node.getNumber());
+            Collections.reverse(copy);
+            for(TNumber e : copy)
+            {
+                e.apply(this);
+            }
+        }
+        outAAugustDate(node);
+    }
+
+    public void inASeptemberDate(ASeptemberDate node)
+    {
+        defaultIn(node);
+    }
+
+    public void outASeptemberDate(ASeptemberDate node)
+    {
+        defaultOut(node);
+    }
+
+    @Override
+    public void caseASeptemberDate(ASeptemberDate node)
+    {
+        inASeptemberDate(node);
+        {
+            List<TNumber> copy = new ArrayList<TNumber>(node.getNumber());
+            Collections.reverse(copy);
+            for(TNumber e : copy)
+            {
+                e.apply(this);
+            }
+        }
+        outASeptemberDate(node);
+    }
+
+    public void inAOctoberDate(AOctoberDate node)
+    {
+        defaultIn(node);
+    }
+
+    public void outAOctoberDate(AOctoberDate node)
+    {
+        defaultOut(node);
+    }
+
+    @Override
+    public void caseAOctoberDate(AOctoberDate node)
+    {
+        inAOctoberDate(node);
+        {
+            List<TNumber> copy = new ArrayList<TNumber>(node.getNumber());
+            Collections.reverse(copy);
+            for(TNumber e : copy)
+            {
+                e.apply(this);
+            }
+        }
+        outAOctoberDate(node);
+    }
+
+    public void inANovemberDate(ANovemberDate node)
+    {
+        defaultIn(node);
+    }
+
+    public void outANovemberDate(ANovemberDate node)
+    {
+        defaultOut(node);
+    }
+
+    @Override
+    public void caseANovemberDate(ANovemberDate node)
+    {
+        inANovemberDate(node);
+        {
+            List<TNumber> copy = new ArrayList<TNumber>(node.getNumber());
+            Collections.reverse(copy);
+            for(TNumber e : copy)
+            {
+                e.apply(this);
+            }
+        }
+        outANovemberDate(node);
+    }
+
+    public void inADecemberDate(ADecemberDate node)
+    {
+        defaultIn(node);
+    }
+
+    public void outADecemberDate(ADecemberDate node)
+    {
+        defaultOut(node);
+    }
+
+    @Override
+    public void caseADecemberDate(ADecemberDate node)
+    {
+        inADecemberDate(node);
+        {
+            List<TNumber> copy = new ArrayList<TNumber>(node.getNumber());
+            Collections.reverse(copy);
+            for(TNumber e : copy)
+            {
+                e.apply(this);
+            }
+        }
+        outADecemberDate(node);
+    }
+
+    public void inATime(ATime node)
+    {
+        defaultIn(node);
+    }
+
+    public void outATime(ATime node)
+    {
+        defaultOut(node);
+    }
+
+    @Override
+    public void caseATime(ATime node)
+    {
+        inATime(node);
+        if(node.getMinute() != null)
+        {
+            node.getMinute().apply(this);
+        }
+        if(node.getHour() != null)
+        {
+            node.getHour().apply(this);
+        }
+        outATime(node);
     }
 }

@@ -34,6 +34,8 @@ Heute/Morgen/Übermorgen
 						( um ) x Uhr treffen mit Klaus ( -> kann zu widerspruch führen )
 						früh/vormittag/mittag/nachmittag/abend treffen mit Klaus ( -> feste Uhrzeiten vergeben )
 
+Nächste Woche keine Meetings ( -> kein Datum eingetragen; ganztätig )
+
 In	x Stunden treffen mit Klaus	(-> fest Zeit bis zum Ereignis; selbst bestimmt )
 	x Minuten
 	x Sekunden
@@ -60,6 +62,7 @@ Allgemein/Ideen
 - Soll ein Stoppzeichen benutzt werden um Zeitangaben anzugeben? z.b. "Treffen mit Klaus; 04.04. 13uhr"
 - Regeln einführen
  -- "@rule Niemals zwischen 12-13uhr Termin"
- -- "@rule Immer zwischen 12-13uhr frei halten"
- -- Bei Eintrag eines Termins stößt das Programm auf einen Widerspruch
+ -- "@rule Immer zwischen 12-13uhr Mittagspause"
+ -- "@rule Wenn ... dann ... " sinnvoll? 
+ -- Bei Eintrag eines Termins stößt das Programm auf einen Widerspruch; anzeigen
 		

@@ -69,77 +69,297 @@ public class AnalysisAdapter implements Analysis
         defaultCase(node);
     }
 
-    public void caseAPlusExpr(APlusExpr node)
+    public void caseANextEntry(ANextEntry node)
     {
         defaultCase(node);
     }
 
-    public void caseAMinusExpr(AMinusExpr node)
+    public void caseARelativeEntry(ARelativeEntry node)
     {
         defaultCase(node);
     }
 
-    public void caseAMultExpr(AMultExpr node)
+    public void caseADateEntry(ADateEntry node)
     {
         defaultCase(node);
     }
 
-    public void caseADivExpr(ADivExpr node)
+    public void caseAMondayRelative(AMondayRelative node)
     {
         defaultCase(node);
     }
 
-    public void caseAModExpr(AModExpr node)
+    public void caseAThuesdayRelative(AThuesdayRelative node)
     {
         defaultCase(node);
     }
 
-    public void caseANumberExpr(ANumberExpr node)
+    public void caseAWednesdayRelative(AWednesdayRelative node)
     {
         defaultCase(node);
     }
 
-    public void caseTNumber(TNumber node)
+    public void caseATuersdayRelative(ATuersdayRelative node)
     {
         defaultCase(node);
     }
 
-    public void caseTPlus(TPlus node)
+    public void caseAFridayRelative(AFridayRelative node)
     {
         defaultCase(node);
     }
 
-    public void caseTMinus(TMinus node)
+    public void caseASaturdayRelative(ASaturdayRelative node)
     {
         defaultCase(node);
     }
 
-    public void caseTMult(TMult node)
+    public void caseASundayRelative(ASundayRelative node)
     {
         defaultCase(node);
     }
 
-    public void caseTDiv(TDiv node)
+    public void caseAWeekendRelative(AWeekendRelative node)
     {
         defaultCase(node);
     }
 
-    public void caseTMod(TMod node)
+    public void caseAMonthRelative(AMonthRelative node)
     {
         defaultCase(node);
     }
 
-    public void caseTLPar(TLPar node)
+    public void caseAYearRelative(AYearRelative node)
     {
         defaultCase(node);
     }
 
-    public void caseTRPar(TRPar node)
+    public void caseALatinDate(ALatinDate node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseAJanuaryDate(AJanuaryDate node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseAFebruaryDate(AFebruaryDate node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseAMarchDate(AMarchDate node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseAAprilDate(AAprilDate node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseAMayDate(AMayDate node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseAJuneDate(AJuneDate node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseAJulyDate(AJulyDate node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseAAugustDate(AAugustDate node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseASeptemberDate(ASeptemberDate node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseAOctoberDate(AOctoberDate node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseANovemberDate(ANovemberDate node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseADecemberDate(ADecemberDate node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseATime(ATime node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTNext(TNext node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTMonday(TMonday node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTThuesday(TThuesday node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTWednesday(TWednesday node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTTuersday(TTuersday node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTFriday(TFriday node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTSaturday(TSaturday node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTSunday(TSunday node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTWeekend(TWeekend node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTMonth(TMonth node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTYear(TYear node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTJanuary(TJanuary node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTFebruary(TFebruary node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTMarch(TMarch node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTApril(TApril node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTMay(TMay node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTJune(TJune node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTJuly(TJuly node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTAugust(TAugust node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTSeptember(TSeptember node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTOctober(TOctober node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTNovember(TNovember node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTDecember(TDecember node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTDot(TDot node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTColon(TColon node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTOn(TOn node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTIn(TIn node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTAt(TAt node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTOclock(TOclock node)
     {
         defaultCase(node);
     }
 
     public void caseTBlank(TBlank node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTWord(TWord node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTNumber(TNumber node)
     {
         defaultCase(node);
     }

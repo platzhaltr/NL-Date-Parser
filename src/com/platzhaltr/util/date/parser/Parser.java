@@ -166,58 +166,298 @@ public class Parser
                 case REDUCE:
                     switch(this.action[1])
                     {
-                    case 0: /* reduce AFactorExpr */
+                    case 0: /* reduce AAabsoluteentry1Entry */
 		    {
 			ArrayList list = new0();
 			push(goTo(0), list);
 		    }
 		    break;
-                    case 1: /* reduce APlusExpr */
+                    case 1: /* reduce AAabsoluteentry2Entry */
 		    {
 			ArrayList list = new1();
 			push(goTo(0), list);
 		    }
 		    break;
-                    case 2: /* reduce AMinusExpr */
+                    case 2: /* reduce AArelativeentry1Entry */
 		    {
 			ArrayList list = new2();
 			push(goTo(0), list);
 		    }
 		    break;
-                    case 3: /* reduce ATermFactor */
+                    case 3: /* reduce AArelativeentry2Entry */
 		    {
 			ArrayList list = new3();
-			push(goTo(1), list);
+			push(goTo(0), list);
 		    }
 		    break;
-                    case 4: /* reduce AMultFactor */
+                    case 4: /* reduce AOnPrefix */
 		    {
 			ArrayList list = new4();
 			push(goTo(1), list);
 		    }
 		    break;
-                    case 5: /* reduce ADivFactor */
+                    case 5: /* reduce ANextPrefix */
 		    {
 			ArrayList list = new5();
 			push(goTo(1), list);
 		    }
 		    break;
-                    case 6: /* reduce AModFactor */
+                    case 6: /* reduce ALatinAbsolute */
 		    {
 			ArrayList list = new6();
-			push(goTo(1), list);
+			push(goTo(2), list);
 		    }
 		    break;
-                    case 7: /* reduce ANumberTerm */
+                    case 7: /* reduce AAjanuaryabsolute1Absolute */
 		    {
 			ArrayList list = new7();
 			push(goTo(2), list);
 		    }
 		    break;
-                    case 8: /* reduce AExprTerm */
+                    case 8: /* reduce AAjanuaryabsolute2Absolute */
 		    {
 			ArrayList list = new8();
 			push(goTo(2), list);
+		    }
+		    break;
+                    case 9: /* reduce AAfebruaryabsolute1Absolute */
+		    {
+			ArrayList list = new9();
+			push(goTo(2), list);
+		    }
+		    break;
+                    case 10: /* reduce AAfebruaryabsolute2Absolute */
+		    {
+			ArrayList list = new10();
+			push(goTo(2), list);
+		    }
+		    break;
+                    case 11: /* reduce AAmarchabsolute1Absolute */
+		    {
+			ArrayList list = new11();
+			push(goTo(2), list);
+		    }
+		    break;
+                    case 12: /* reduce AAmarchabsolute2Absolute */
+		    {
+			ArrayList list = new12();
+			push(goTo(2), list);
+		    }
+		    break;
+                    case 13: /* reduce AAaprilabsolute1Absolute */
+		    {
+			ArrayList list = new13();
+			push(goTo(2), list);
+		    }
+		    break;
+                    case 14: /* reduce AAaprilabsolute2Absolute */
+		    {
+			ArrayList list = new14();
+			push(goTo(2), list);
+		    }
+		    break;
+                    case 15: /* reduce AAmayabsolute1Absolute */
+		    {
+			ArrayList list = new15();
+			push(goTo(2), list);
+		    }
+		    break;
+                    case 16: /* reduce AAmayabsolute2Absolute */
+		    {
+			ArrayList list = new16();
+			push(goTo(2), list);
+		    }
+		    break;
+                    case 17: /* reduce AAjuneabsolute1Absolute */
+		    {
+			ArrayList list = new17();
+			push(goTo(2), list);
+		    }
+		    break;
+                    case 18: /* reduce AAjuneabsolute2Absolute */
+		    {
+			ArrayList list = new18();
+			push(goTo(2), list);
+		    }
+		    break;
+                    case 19: /* reduce AAjulyabsolute1Absolute */
+		    {
+			ArrayList list = new19();
+			push(goTo(2), list);
+		    }
+		    break;
+                    case 20: /* reduce AAjulyabsolute2Absolute */
+		    {
+			ArrayList list = new20();
+			push(goTo(2), list);
+		    }
+		    break;
+                    case 21: /* reduce AAaugustabsolute1Absolute */
+		    {
+			ArrayList list = new21();
+			push(goTo(2), list);
+		    }
+		    break;
+                    case 22: /* reduce AAaugustabsolute2Absolute */
+		    {
+			ArrayList list = new22();
+			push(goTo(2), list);
+		    }
+		    break;
+                    case 23: /* reduce AAseptemberabsolute1Absolute */
+		    {
+			ArrayList list = new23();
+			push(goTo(2), list);
+		    }
+		    break;
+                    case 24: /* reduce AAseptemberabsolute2Absolute */
+		    {
+			ArrayList list = new24();
+			push(goTo(2), list);
+		    }
+		    break;
+                    case 25: /* reduce AAoctoberabsolute1Absolute */
+		    {
+			ArrayList list = new25();
+			push(goTo(2), list);
+		    }
+		    break;
+                    case 26: /* reduce AAoctoberabsolute2Absolute */
+		    {
+			ArrayList list = new26();
+			push(goTo(2), list);
+		    }
+		    break;
+                    case 27: /* reduce AAnovemberabsolute1Absolute */
+		    {
+			ArrayList list = new27();
+			push(goTo(2), list);
+		    }
+		    break;
+                    case 28: /* reduce AAnovemberabsolute2Absolute */
+		    {
+			ArrayList list = new28();
+			push(goTo(2), list);
+		    }
+		    break;
+                    case 29: /* reduce AAdecemberabsolute1Absolute */
+		    {
+			ArrayList list = new29();
+			push(goTo(2), list);
+		    }
+		    break;
+                    case 30: /* reduce AAdecemberabsolute2Absolute */
+		    {
+			ArrayList list = new30();
+			push(goTo(2), list);
+		    }
+		    break;
+                    case 31: /* reduce AAtime1Time */
+		    {
+			ArrayList list = new31();
+			push(goTo(3), list);
+		    }
+		    break;
+                    case 32: /* reduce AAtime2Time */
+		    {
+			ArrayList list = new32();
+			push(goTo(3), list);
+		    }
+		    break;
+                    case 33: /* reduce AAtime3Time */
+		    {
+			ArrayList list = new33();
+			push(goTo(3), list);
+		    }
+		    break;
+                    case 34: /* reduce AAtime4Time */
+		    {
+			ArrayList list = new34();
+			push(goTo(3), list);
+		    }
+		    break;
+                    case 35: /* reduce ASingleDate */
+		    {
+			ArrayList list = new35();
+			push(goTo(4), list);
+		    }
+		    break;
+                    case 36: /* reduce ANextDate */
+		    {
+			ArrayList list = new36();
+			push(goTo(4), list);
+		    }
+		    break;
+                    case 37: /* reduce AWorkingdayRelative */
+		    {
+			ArrayList list = new37();
+			push(goTo(5), list);
+		    }
+		    break;
+                    case 38: /* reduce AWeekenddayRelative */
+		    {
+			ArrayList list = new38();
+			push(goTo(5), list);
+		    }
+		    break;
+                    case 39: /* reduce AWeekendRelative */
+		    {
+			ArrayList list = new39();
+			push(goTo(5), list);
+		    }
+		    break;
+                    case 40: /* reduce AMonthRelative */
+		    {
+			ArrayList list = new40();
+			push(goTo(5), list);
+		    }
+		    break;
+                    case 41: /* reduce AYearRelative */
+		    {
+			ArrayList list = new41();
+			push(goTo(5), list);
+		    }
+		    break;
+                    case 42: /* reduce AMondayWorkingday */
+		    {
+			ArrayList list = new42();
+			push(goTo(6), list);
+		    }
+		    break;
+                    case 43: /* reduce AThuesdayWorkingday */
+		    {
+			ArrayList list = new43();
+			push(goTo(6), list);
+		    }
+		    break;
+                    case 44: /* reduce AWednesdayWorkingday */
+		    {
+			ArrayList list = new44();
+			push(goTo(6), list);
+		    }
+		    break;
+                    case 45: /* reduce ATuersdayWorkingday */
+		    {
+			ArrayList list = new45();
+			push(goTo(6), list);
+		    }
+		    break;
+                    case 46: /* reduce AFridayWorkingday */
+		    {
+			ArrayList list = new46();
+			push(goTo(6), list);
+		    }
+		    break;
+                    case 47: /* reduce ASaturdayWeekendday */
+		    {
+			ArrayList list = new47();
+			push(goTo(7), list);
+		    }
+		    break;
+                    case 48: /* reduce ASundayWeekendday */
+		    {
+			ArrayList list = new48();
+			push(goTo(7), list);
 		    }
 		    break;
                     }
@@ -225,7 +465,7 @@ public class Parser
                 case ACCEPT:
                     {
                         EOF node2 = (EOF) this.lexer.next();
-                        PExpr node1 = (PExpr) pop().get(0);
+                        PEntry node1 = (PEntry) pop().get(0);
                         Start node = new Start(node1, node2);
                         return node;
                     }
@@ -240,184 +480,1325 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new0() /* reduce AFactorExpr */
+    ArrayList new0() /* reduce AAabsoluteentry1Entry */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
         @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
-        PExpr pexprNode1;
-        pexprNode1 = (PExpr)nodeArrayList1.get(0);
-	nodeList.add(pexprNode1);
+        PEntry pentryNode1;
+        {
+            // Block
+        PDate pdateNode2;
+        @SuppressWarnings("unused") Object nullNode3 = null;
+        pdateNode2 = (PDate)nodeArrayList2.get(0);
+
+        pentryNode1 = new ADateEntry(pdateNode2, null);
+        }
+	nodeList.add(pentryNode1);
         return nodeList;
     }
 
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new1() /* reduce APlusExpr */
+    ArrayList new1() /* reduce AAabsoluteentry2Entry */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
         @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
         @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
         @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
-        PExpr pexprNode1;
+        PEntry pentryNode1;
         {
             // Block
-        PExpr pexprNode2;
-        PExpr pexprNode3;
-        pexprNode2 = (PExpr)nodeArrayList1.get(0);
-        pexprNode3 = (PExpr)nodeArrayList3.get(0);
+        PDate pdateNode2;
+        PTime ptimeNode3;
+        pdateNode2 = (PDate)nodeArrayList2.get(0);
+        ptimeNode3 = (PTime)nodeArrayList3.get(0);
 
-        pexprNode1 = new APlusExpr(pexprNode2, pexprNode3);
+        pentryNode1 = new ADateEntry(pdateNode2, ptimeNode3);
         }
-	nodeList.add(pexprNode1);
+	nodeList.add(pentryNode1);
         return nodeList;
     }
 
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new2() /* reduce AMinusExpr */
+    ArrayList new2() /* reduce AArelativeentry1Entry */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PEntry pentryNode1;
+        {
+            // Block
+        PRelative prelativeNode2;
+        @SuppressWarnings("unused") Object nullNode3 = null;
+        prelativeNode2 = (PRelative)nodeArrayList2.get(0);
+
+        pentryNode1 = new ARelativeEntry(prelativeNode2, null);
+        }
+	nodeList.add(pentryNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new3() /* reduce AArelativeentry2Entry */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
         @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
         @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
         @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
-        PExpr pexprNode1;
+        PEntry pentryNode1;
         {
             // Block
-        PExpr pexprNode2;
-        PExpr pexprNode3;
-        pexprNode2 = (PExpr)nodeArrayList1.get(0);
-        pexprNode3 = (PExpr)nodeArrayList3.get(0);
+        PRelative prelativeNode2;
+        PTime ptimeNode3;
+        prelativeNode2 = (PRelative)nodeArrayList2.get(0);
+        ptimeNode3 = (PTime)nodeArrayList3.get(0);
 
-        pexprNode1 = new AMinusExpr(pexprNode2, pexprNode3);
+        pentryNode1 = new ARelativeEntry(prelativeNode2, ptimeNode3);
         }
-	nodeList.add(pexprNode1);
+	nodeList.add(pentryNode1);
         return nodeList;
     }
 
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new3() /* reduce ATermFactor */
+    ArrayList new4() /* reduce AOnPrefix */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
         @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
-        PExpr pexprNode1;
-        pexprNode1 = (PExpr)nodeArrayList1.get(0);
-	nodeList.add(pexprNode1);
         return nodeList;
     }
 
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new4() /* reduce AMultFactor */
+    ArrayList new5() /* reduce ANextPrefix */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new6() /* reduce ALatinAbsolute */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PDate pdateNode1;
+        {
+            // Block
+        LinkedList listNode3 = new LinkedList();
+        {
+            // Block
+        LinkedList listNode2 = new LinkedList();
+        listNode2 = (LinkedList)nodeArrayList1.get(0);
+	if(listNode2 != null)
+	{
+	  listNode3.addAll(listNode2);
+	}
+        }
+
+        pdateNode1 = new ALatinDate(listNode3);
+        }
+	nodeList.add(pdateNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new7() /* reduce AAjanuaryabsolute1Absolute */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
         @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
         @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
         @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
-        PExpr pexprNode1;
+        PDate pdateNode1;
         {
             // Block
-        PExpr pexprNode2;
-        PExpr pexprNode3;
-        pexprNode2 = (PExpr)nodeArrayList1.get(0);
-        pexprNode3 = (PExpr)nodeArrayList3.get(0);
-
-        pexprNode1 = new AMultExpr(pexprNode2, pexprNode3);
-        }
-	nodeList.add(pexprNode1);
-        return nodeList;
-    }
-
-
-
-    @SuppressWarnings("unchecked")
-    ArrayList new5() /* reduce ADivFactor */
-    {
-        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
-
-        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
-        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
-        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
-        PExpr pexprNode1;
-        {
-            // Block
-        PExpr pexprNode2;
-        PExpr pexprNode3;
-        pexprNode2 = (PExpr)nodeArrayList1.get(0);
-        pexprNode3 = (PExpr)nodeArrayList3.get(0);
-
-        pexprNode1 = new ADivExpr(pexprNode2, pexprNode3);
-        }
-	nodeList.add(pexprNode1);
-        return nodeList;
-    }
-
-
-
-    @SuppressWarnings("unchecked")
-    ArrayList new6() /* reduce AModFactor */
-    {
-        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
-
-        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
-        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
-        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
-        PExpr pexprNode1;
-        {
-            // Block
-        PExpr pexprNode2;
-        PExpr pexprNode3;
-        pexprNode2 = (PExpr)nodeArrayList1.get(0);
-        pexprNode3 = (PExpr)nodeArrayList3.get(0);
-
-        pexprNode1 = new AModExpr(pexprNode2, pexprNode3);
-        }
-	nodeList.add(pexprNode1);
-        return nodeList;
-    }
-
-
-
-    @SuppressWarnings("unchecked")
-    ArrayList new7() /* reduce ANumberTerm */
-    {
-        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
-
-        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
-        PExpr pexprNode1;
+        LinkedList listNode3 = new LinkedList();
         {
             // Block
         TNumber tnumberNode2;
         tnumberNode2 = (TNumber)nodeArrayList1.get(0);
-
-        pexprNode1 = new ANumberExpr(tnumberNode2);
+	if(tnumberNode2 != null)
+	{
+	  listNode3.add(tnumberNode2);
+	}
         }
-	nodeList.add(pexprNode1);
+
+        pdateNode1 = new AJanuaryDate(listNode3);
+        }
+	nodeList.add(pdateNode1);
         return nodeList;
     }
 
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new8() /* reduce AExprTerm */
+    ArrayList new8() /* reduce AAjanuaryabsolute2Absolute */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList4 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PDate pdateNode1;
+        {
+            // Block
+        LinkedList listNode4 = new LinkedList();
+        {
+            // Block
+        TNumber tnumberNode2;
+        TNumber tnumberNode3;
+        tnumberNode2 = (TNumber)nodeArrayList1.get(0);
+        tnumberNode3 = (TNumber)nodeArrayList4.get(0);
+	if(tnumberNode2 != null)
+	{
+	  listNode4.add(tnumberNode2);
+	}
+	if(tnumberNode3 != null)
+	{
+	  listNode4.add(tnumberNode3);
+	}
+        }
+
+        pdateNode1 = new AJanuaryDate(listNode4);
+        }
+	nodeList.add(pdateNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new9() /* reduce AAfebruaryabsolute1Absolute */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
         @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
         @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
         @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
-        PExpr pexprNode1;
-        pexprNode1 = (PExpr)nodeArrayList2.get(0);
-	nodeList.add(pexprNode1);
+        PDate pdateNode1;
+        {
+            // Block
+        LinkedList listNode3 = new LinkedList();
+        {
+            // Block
+        TNumber tnumberNode2;
+        tnumberNode2 = (TNumber)nodeArrayList1.get(0);
+	if(tnumberNode2 != null)
+	{
+	  listNode3.add(tnumberNode2);
+	}
+        }
+
+        pdateNode1 = new AFebruaryDate(listNode3);
+        }
+	nodeList.add(pdateNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new10() /* reduce AAfebruaryabsolute2Absolute */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList4 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PDate pdateNode1;
+        {
+            // Block
+        LinkedList listNode4 = new LinkedList();
+        {
+            // Block
+        TNumber tnumberNode2;
+        TNumber tnumberNode3;
+        tnumberNode2 = (TNumber)nodeArrayList1.get(0);
+        tnumberNode3 = (TNumber)nodeArrayList4.get(0);
+	if(tnumberNode2 != null)
+	{
+	  listNode4.add(tnumberNode2);
+	}
+	if(tnumberNode3 != null)
+	{
+	  listNode4.add(tnumberNode3);
+	}
+        }
+
+        pdateNode1 = new AFebruaryDate(listNode4);
+        }
+	nodeList.add(pdateNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new11() /* reduce AAmarchabsolute1Absolute */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PDate pdateNode1;
+        {
+            // Block
+        LinkedList listNode3 = new LinkedList();
+        {
+            // Block
+        TNumber tnumberNode2;
+        tnumberNode2 = (TNumber)nodeArrayList1.get(0);
+	if(tnumberNode2 != null)
+	{
+	  listNode3.add(tnumberNode2);
+	}
+        }
+
+        pdateNode1 = new AMarchDate(listNode3);
+        }
+	nodeList.add(pdateNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new12() /* reduce AAmarchabsolute2Absolute */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList4 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PDate pdateNode1;
+        {
+            // Block
+        LinkedList listNode4 = new LinkedList();
+        {
+            // Block
+        TNumber tnumberNode2;
+        TNumber tnumberNode3;
+        tnumberNode2 = (TNumber)nodeArrayList1.get(0);
+        tnumberNode3 = (TNumber)nodeArrayList4.get(0);
+	if(tnumberNode2 != null)
+	{
+	  listNode4.add(tnumberNode2);
+	}
+	if(tnumberNode3 != null)
+	{
+	  listNode4.add(tnumberNode3);
+	}
+        }
+
+        pdateNode1 = new AMarchDate(listNode4);
+        }
+	nodeList.add(pdateNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new13() /* reduce AAaprilabsolute1Absolute */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PDate pdateNode1;
+        {
+            // Block
+        LinkedList listNode3 = new LinkedList();
+        {
+            // Block
+        TNumber tnumberNode2;
+        tnumberNode2 = (TNumber)nodeArrayList1.get(0);
+	if(tnumberNode2 != null)
+	{
+	  listNode3.add(tnumberNode2);
+	}
+        }
+
+        pdateNode1 = new AAprilDate(listNode3);
+        }
+	nodeList.add(pdateNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new14() /* reduce AAaprilabsolute2Absolute */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList4 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PDate pdateNode1;
+        {
+            // Block
+        LinkedList listNode4 = new LinkedList();
+        {
+            // Block
+        TNumber tnumberNode2;
+        TNumber tnumberNode3;
+        tnumberNode2 = (TNumber)nodeArrayList1.get(0);
+        tnumberNode3 = (TNumber)nodeArrayList4.get(0);
+	if(tnumberNode2 != null)
+	{
+	  listNode4.add(tnumberNode2);
+	}
+	if(tnumberNode3 != null)
+	{
+	  listNode4.add(tnumberNode3);
+	}
+        }
+
+        pdateNode1 = new AAprilDate(listNode4);
+        }
+	nodeList.add(pdateNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new15() /* reduce AAmayabsolute1Absolute */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PDate pdateNode1;
+        {
+            // Block
+        LinkedList listNode3 = new LinkedList();
+        {
+            // Block
+        TNumber tnumberNode2;
+        tnumberNode2 = (TNumber)nodeArrayList1.get(0);
+	if(tnumberNode2 != null)
+	{
+	  listNode3.add(tnumberNode2);
+	}
+        }
+
+        pdateNode1 = new AMayDate(listNode3);
+        }
+	nodeList.add(pdateNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new16() /* reduce AAmayabsolute2Absolute */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList4 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PDate pdateNode1;
+        {
+            // Block
+        LinkedList listNode4 = new LinkedList();
+        {
+            // Block
+        TNumber tnumberNode2;
+        TNumber tnumberNode3;
+        tnumberNode2 = (TNumber)nodeArrayList1.get(0);
+        tnumberNode3 = (TNumber)nodeArrayList4.get(0);
+	if(tnumberNode2 != null)
+	{
+	  listNode4.add(tnumberNode2);
+	}
+	if(tnumberNode3 != null)
+	{
+	  listNode4.add(tnumberNode3);
+	}
+        }
+
+        pdateNode1 = new AMayDate(listNode4);
+        }
+	nodeList.add(pdateNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new17() /* reduce AAjuneabsolute1Absolute */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PDate pdateNode1;
+        {
+            // Block
+        LinkedList listNode3 = new LinkedList();
+        {
+            // Block
+        TNumber tnumberNode2;
+        tnumberNode2 = (TNumber)nodeArrayList1.get(0);
+	if(tnumberNode2 != null)
+	{
+	  listNode3.add(tnumberNode2);
+	}
+        }
+
+        pdateNode1 = new AJuneDate(listNode3);
+        }
+	nodeList.add(pdateNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new18() /* reduce AAjuneabsolute2Absolute */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList4 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PDate pdateNode1;
+        {
+            // Block
+        LinkedList listNode4 = new LinkedList();
+        {
+            // Block
+        TNumber tnumberNode2;
+        TNumber tnumberNode3;
+        tnumberNode2 = (TNumber)nodeArrayList1.get(0);
+        tnumberNode3 = (TNumber)nodeArrayList4.get(0);
+	if(tnumberNode2 != null)
+	{
+	  listNode4.add(tnumberNode2);
+	}
+	if(tnumberNode3 != null)
+	{
+	  listNode4.add(tnumberNode3);
+	}
+        }
+
+        pdateNode1 = new AJuneDate(listNode4);
+        }
+	nodeList.add(pdateNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new19() /* reduce AAjulyabsolute1Absolute */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PDate pdateNode1;
+        {
+            // Block
+        LinkedList listNode3 = new LinkedList();
+        {
+            // Block
+        TNumber tnumberNode2;
+        tnumberNode2 = (TNumber)nodeArrayList1.get(0);
+	if(tnumberNode2 != null)
+	{
+	  listNode3.add(tnumberNode2);
+	}
+        }
+
+        pdateNode1 = new AJulyDate(listNode3);
+        }
+	nodeList.add(pdateNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new20() /* reduce AAjulyabsolute2Absolute */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList4 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PDate pdateNode1;
+        {
+            // Block
+        LinkedList listNode4 = new LinkedList();
+        {
+            // Block
+        TNumber tnumberNode2;
+        TNumber tnumberNode3;
+        tnumberNode2 = (TNumber)nodeArrayList1.get(0);
+        tnumberNode3 = (TNumber)nodeArrayList4.get(0);
+	if(tnumberNode2 != null)
+	{
+	  listNode4.add(tnumberNode2);
+	}
+	if(tnumberNode3 != null)
+	{
+	  listNode4.add(tnumberNode3);
+	}
+        }
+
+        pdateNode1 = new AJulyDate(listNode4);
+        }
+	nodeList.add(pdateNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new21() /* reduce AAaugustabsolute1Absolute */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PDate pdateNode1;
+        {
+            // Block
+        LinkedList listNode3 = new LinkedList();
+        {
+            // Block
+        TNumber tnumberNode2;
+        tnumberNode2 = (TNumber)nodeArrayList1.get(0);
+	if(tnumberNode2 != null)
+	{
+	  listNode3.add(tnumberNode2);
+	}
+        }
+
+        pdateNode1 = new AAugustDate(listNode3);
+        }
+	nodeList.add(pdateNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new22() /* reduce AAaugustabsolute2Absolute */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList4 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PDate pdateNode1;
+        {
+            // Block
+        LinkedList listNode4 = new LinkedList();
+        {
+            // Block
+        TNumber tnumberNode2;
+        TNumber tnumberNode3;
+        tnumberNode2 = (TNumber)nodeArrayList1.get(0);
+        tnumberNode3 = (TNumber)nodeArrayList4.get(0);
+	if(tnumberNode2 != null)
+	{
+	  listNode4.add(tnumberNode2);
+	}
+	if(tnumberNode3 != null)
+	{
+	  listNode4.add(tnumberNode3);
+	}
+        }
+
+        pdateNode1 = new AAugustDate(listNode4);
+        }
+	nodeList.add(pdateNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new23() /* reduce AAseptemberabsolute1Absolute */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PDate pdateNode1;
+        {
+            // Block
+        LinkedList listNode3 = new LinkedList();
+        {
+            // Block
+        TNumber tnumberNode2;
+        tnumberNode2 = (TNumber)nodeArrayList1.get(0);
+	if(tnumberNode2 != null)
+	{
+	  listNode3.add(tnumberNode2);
+	}
+        }
+
+        pdateNode1 = new ASeptemberDate(listNode3);
+        }
+	nodeList.add(pdateNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new24() /* reduce AAseptemberabsolute2Absolute */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList4 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PDate pdateNode1;
+        {
+            // Block
+        LinkedList listNode4 = new LinkedList();
+        {
+            // Block
+        TNumber tnumberNode2;
+        TNumber tnumberNode3;
+        tnumberNode2 = (TNumber)nodeArrayList1.get(0);
+        tnumberNode3 = (TNumber)nodeArrayList4.get(0);
+	if(tnumberNode2 != null)
+	{
+	  listNode4.add(tnumberNode2);
+	}
+	if(tnumberNode3 != null)
+	{
+	  listNode4.add(tnumberNode3);
+	}
+        }
+
+        pdateNode1 = new ASeptemberDate(listNode4);
+        }
+	nodeList.add(pdateNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new25() /* reduce AAoctoberabsolute1Absolute */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PDate pdateNode1;
+        {
+            // Block
+        LinkedList listNode3 = new LinkedList();
+        {
+            // Block
+        TNumber tnumberNode2;
+        tnumberNode2 = (TNumber)nodeArrayList1.get(0);
+	if(tnumberNode2 != null)
+	{
+	  listNode3.add(tnumberNode2);
+	}
+        }
+
+        pdateNode1 = new AOctoberDate(listNode3);
+        }
+	nodeList.add(pdateNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new26() /* reduce AAoctoberabsolute2Absolute */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList4 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PDate pdateNode1;
+        {
+            // Block
+        LinkedList listNode4 = new LinkedList();
+        {
+            // Block
+        TNumber tnumberNode2;
+        TNumber tnumberNode3;
+        tnumberNode2 = (TNumber)nodeArrayList1.get(0);
+        tnumberNode3 = (TNumber)nodeArrayList4.get(0);
+	if(tnumberNode2 != null)
+	{
+	  listNode4.add(tnumberNode2);
+	}
+	if(tnumberNode3 != null)
+	{
+	  listNode4.add(tnumberNode3);
+	}
+        }
+
+        pdateNode1 = new AOctoberDate(listNode4);
+        }
+	nodeList.add(pdateNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new27() /* reduce AAnovemberabsolute1Absolute */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PDate pdateNode1;
+        {
+            // Block
+        LinkedList listNode3 = new LinkedList();
+        {
+            // Block
+        TNumber tnumberNode2;
+        tnumberNode2 = (TNumber)nodeArrayList1.get(0);
+	if(tnumberNode2 != null)
+	{
+	  listNode3.add(tnumberNode2);
+	}
+        }
+
+        pdateNode1 = new ANovemberDate(listNode3);
+        }
+	nodeList.add(pdateNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new28() /* reduce AAnovemberabsolute2Absolute */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList4 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PDate pdateNode1;
+        {
+            // Block
+        LinkedList listNode4 = new LinkedList();
+        {
+            // Block
+        TNumber tnumberNode2;
+        TNumber tnumberNode3;
+        tnumberNode2 = (TNumber)nodeArrayList1.get(0);
+        tnumberNode3 = (TNumber)nodeArrayList4.get(0);
+	if(tnumberNode2 != null)
+	{
+	  listNode4.add(tnumberNode2);
+	}
+	if(tnumberNode3 != null)
+	{
+	  listNode4.add(tnumberNode3);
+	}
+        }
+
+        pdateNode1 = new ANovemberDate(listNode4);
+        }
+	nodeList.add(pdateNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new29() /* reduce AAdecemberabsolute1Absolute */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PDate pdateNode1;
+        {
+            // Block
+        LinkedList listNode3 = new LinkedList();
+        {
+            // Block
+        TNumber tnumberNode2;
+        tnumberNode2 = (TNumber)nodeArrayList1.get(0);
+	if(tnumberNode2 != null)
+	{
+	  listNode3.add(tnumberNode2);
+	}
+        }
+
+        pdateNode1 = new ADecemberDate(listNode3);
+        }
+	nodeList.add(pdateNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new30() /* reduce AAdecemberabsolute2Absolute */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList4 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PDate pdateNode1;
+        {
+            // Block
+        LinkedList listNode4 = new LinkedList();
+        {
+            // Block
+        TNumber tnumberNode2;
+        TNumber tnumberNode3;
+        tnumberNode2 = (TNumber)nodeArrayList1.get(0);
+        tnumberNode3 = (TNumber)nodeArrayList4.get(0);
+	if(tnumberNode2 != null)
+	{
+	  listNode4.add(tnumberNode2);
+	}
+	if(tnumberNode3 != null)
+	{
+	  listNode4.add(tnumberNode3);
+	}
+        }
+
+        pdateNode1 = new ADecemberDate(listNode4);
+        }
+	nodeList.add(pdateNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new31() /* reduce AAtime1Time */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PTime ptimeNode1;
+        {
+            // Block
+        TNumber tnumberNode2;
+        @SuppressWarnings("unused") Object nullNode3 = null;
+        tnumberNode2 = (TNumber)nodeArrayList2.get(0);
+
+        ptimeNode1 = new ATime(tnumberNode2, null);
+        }
+	nodeList.add(ptimeNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new32() /* reduce AAtime2Time */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList4 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PTime ptimeNode1;
+        {
+            // Block
+        TNumber tnumberNode2;
+        @SuppressWarnings("unused") Object nullNode3 = null;
+        tnumberNode2 = (TNumber)nodeArrayList2.get(0);
+
+        ptimeNode1 = new ATime(tnumberNode2, null);
+        }
+	nodeList.add(ptimeNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new33() /* reduce AAtime3Time */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList4 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PTime ptimeNode1;
+        {
+            // Block
+        TNumber tnumberNode2;
+        TNumber tnumberNode3;
+        tnumberNode2 = (TNumber)nodeArrayList2.get(0);
+        tnumberNode3 = (TNumber)nodeArrayList3.get(0);
+
+        ptimeNode1 = new ATime(tnumberNode2, tnumberNode3);
+        }
+	nodeList.add(ptimeNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new34() /* reduce AAtime4Time */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList5 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList4 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PTime ptimeNode1;
+        {
+            // Block
+        TNumber tnumberNode2;
+        TNumber tnumberNode3;
+        tnumberNode2 = (TNumber)nodeArrayList2.get(0);
+        tnumberNode3 = (TNumber)nodeArrayList4.get(0);
+
+        ptimeNode1 = new ATime(tnumberNode2, tnumberNode3);
+        }
+	nodeList.add(ptimeNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new35() /* reduce ASingleDate */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        LinkedList listNode2 = new LinkedList();
+        {
+            // Block
+        TNumber tnumberNode1;
+        tnumberNode1 = (TNumber)nodeArrayList1.get(0);
+	if(tnumberNode1 != null)
+	{
+	  listNode2.add(tnumberNode1);
+	}
+        }
+	nodeList.add(listNode2);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new36() /* reduce ANextDate */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        LinkedList listNode3 = new LinkedList();
+        {
+            // Block
+        LinkedList listNode1 = new LinkedList();
+        TNumber tnumberNode2;
+        listNode1 = (LinkedList)nodeArrayList1.get(0);
+        tnumberNode2 = (TNumber)nodeArrayList2.get(0);
+	if(listNode1 != null)
+	{
+	  listNode3.addAll(listNode1);
+	}
+	if(tnumberNode2 != null)
+	{
+	  listNode3.add(tnumberNode2);
+	}
+        }
+	nodeList.add(listNode3);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new37() /* reduce AWorkingdayRelative */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PRelative prelativeNode1;
+        prelativeNode1 = (PRelative)nodeArrayList1.get(0);
+	nodeList.add(prelativeNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new38() /* reduce AWeekenddayRelative */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PRelative prelativeNode1;
+        prelativeNode1 = (PRelative)nodeArrayList1.get(0);
+	nodeList.add(prelativeNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new39() /* reduce AWeekendRelative */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PRelative prelativeNode1;
+        {
+            // Block
+        TWeekend tweekendNode2;
+        tweekendNode2 = (TWeekend)nodeArrayList1.get(0);
+
+        prelativeNode1 = new AWeekendRelative(tweekendNode2);
+        }
+	nodeList.add(prelativeNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new40() /* reduce AMonthRelative */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PRelative prelativeNode1;
+        {
+            // Block
+        TMonth tmonthNode2;
+        tmonthNode2 = (TMonth)nodeArrayList1.get(0);
+
+        prelativeNode1 = new AMonthRelative(tmonthNode2);
+        }
+	nodeList.add(prelativeNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new41() /* reduce AYearRelative */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PRelative prelativeNode1;
+        {
+            // Block
+        TYear tyearNode2;
+        tyearNode2 = (TYear)nodeArrayList1.get(0);
+
+        prelativeNode1 = new AYearRelative(tyearNode2);
+        }
+	nodeList.add(prelativeNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new42() /* reduce AMondayWorkingday */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PRelative prelativeNode1;
+        {
+            // Block
+        TMonday tmondayNode2;
+        tmondayNode2 = (TMonday)nodeArrayList1.get(0);
+
+        prelativeNode1 = new AMondayRelative(tmondayNode2);
+        }
+	nodeList.add(prelativeNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new43() /* reduce AThuesdayWorkingday */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PRelative prelativeNode1;
+        {
+            // Block
+        TThuesday tthuesdayNode2;
+        tthuesdayNode2 = (TThuesday)nodeArrayList1.get(0);
+
+        prelativeNode1 = new AThuesdayRelative(tthuesdayNode2);
+        }
+	nodeList.add(prelativeNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new44() /* reduce AWednesdayWorkingday */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PRelative prelativeNode1;
+        {
+            // Block
+        TWednesday twednesdayNode2;
+        twednesdayNode2 = (TWednesday)nodeArrayList1.get(0);
+
+        prelativeNode1 = new AWednesdayRelative(twednesdayNode2);
+        }
+	nodeList.add(prelativeNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new45() /* reduce ATuersdayWorkingday */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PRelative prelativeNode1;
+        {
+            // Block
+        TTuersday ttuersdayNode2;
+        ttuersdayNode2 = (TTuersday)nodeArrayList1.get(0);
+
+        prelativeNode1 = new ATuersdayRelative(ttuersdayNode2);
+        }
+	nodeList.add(prelativeNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new46() /* reduce AFridayWorkingday */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PRelative prelativeNode1;
+        {
+            // Block
+        TFriday tfridayNode2;
+        tfridayNode2 = (TFriday)nodeArrayList1.get(0);
+
+        prelativeNode1 = new AFridayRelative(tfridayNode2);
+        }
+	nodeList.add(prelativeNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new47() /* reduce ASaturdayWeekendday */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PRelative prelativeNode1;
+        {
+            // Block
+        TSaturday tsaturdayNode2;
+        tsaturdayNode2 = (TSaturday)nodeArrayList1.get(0);
+
+        prelativeNode1 = new ASaturdayRelative(tsaturdayNode2);
+        }
+	nodeList.add(prelativeNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new48() /* reduce ASundayWeekendday */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PRelative prelativeNode1;
+        {
+            // Block
+        TSunday tsundayNode2;
+        tsundayNode2 = (TSunday)nodeArrayList1.get(0);
+
+        prelativeNode1 = new ASundayRelative(tsundayNode2);
+        }
+	nodeList.add(prelativeNode1);
         return nodeList;
     }
 
@@ -425,41 +1806,95 @@ public class Parser
 
     private static int[][][] actionTable;
 /*      {
-			{{-1, ERROR, 0}, {0, SHIFT, 1}, {6, SHIFT, 2}, },
-			{{-1, REDUCE, 7}, },
-			{{-1, ERROR, 2}, {0, SHIFT, 1}, {6, SHIFT, 2}, },
-			{{-1, ERROR, 3}, {1, SHIFT, 7}, {2, SHIFT, 8}, {8, ACCEPT, -1}, },
-			{{-1, REDUCE, 0}, {3, SHIFT, 9}, {4, SHIFT, 10}, {5, SHIFT, 11}, },
-			{{-1, REDUCE, 3}, },
-			{{-1, ERROR, 6}, {1, SHIFT, 7}, {2, SHIFT, 8}, {7, SHIFT, 12}, },
-			{{-1, ERROR, 7}, {0, SHIFT, 1}, {6, SHIFT, 2}, },
-			{{-1, ERROR, 8}, {0, SHIFT, 1}, {6, SHIFT, 2}, },
-			{{-1, ERROR, 9}, {0, SHIFT, 1}, {6, SHIFT, 2}, },
-			{{-1, ERROR, 10}, {0, SHIFT, 1}, {6, SHIFT, 2}, },
-			{{-1, ERROR, 11}, {0, SHIFT, 1}, {6, SHIFT, 2}, },
-			{{-1, REDUCE, 8}, },
-			{{-1, REDUCE, 1}, {3, SHIFT, 9}, {4, SHIFT, 10}, {5, SHIFT, 11}, },
-			{{-1, REDUCE, 2}, {3, SHIFT, 9}, {4, SHIFT, 10}, {5, SHIFT, 11}, },
-			{{-1, REDUCE, 4}, },
+			{{-1, ERROR, 0}, {0, SHIFT, 1}, {25, SHIFT, 2}, },
 			{{-1, REDUCE, 5}, },
-			{{-1, REDUCE, 6}, },
+			{{-1, REDUCE, 4}, {30, SHIFT, 5}, },
+			{{-1, ERROR, 3}, {31, ACCEPT, -1}, },
+			{{-1, ERROR, 4}, {1, SHIFT, 8}, {2, SHIFT, 9}, {3, SHIFT, 10}, {4, SHIFT, 11}, {5, SHIFT, 12}, {6, SHIFT, 13}, {7, SHIFT, 14}, {8, SHIFT, 15}, {9, SHIFT, 16}, {10, SHIFT, 17}, },
+			{{-1, ERROR, 5}, {23, SHIFT, 21}, },
+			{{-1, REDUCE, 0}, {27, SHIFT, 22}, },
+			{{-1, REDUCE, 6}, {30, SHIFT, 24}, },
+			{{-1, REDUCE, 42}, },
+			{{-1, REDUCE, 43}, },
+			{{-1, REDUCE, 44}, },
+			{{-1, REDUCE, 45}, },
+			{{-1, REDUCE, 46}, },
+			{{-1, REDUCE, 47}, },
+			{{-1, REDUCE, 48}, },
+			{{-1, REDUCE, 39}, },
+			{{-1, REDUCE, 40}, },
+			{{-1, REDUCE, 41}, },
+			{{-1, REDUCE, 2}, {27, SHIFT, 22}, },
+			{{-1, REDUCE, 37}, },
+			{{-1, REDUCE, 38}, },
+			{{-1, REDUCE, 35}, {11, SHIFT, 26}, {12, SHIFT, 27}, {13, SHIFT, 28}, {14, SHIFT, 29}, {15, SHIFT, 30}, {16, SHIFT, 31}, {17, SHIFT, 32}, {18, SHIFT, 33}, {19, SHIFT, 34}, {20, SHIFT, 35}, {21, SHIFT, 36}, {22, SHIFT, 37}, },
+			{{-1, ERROR, 22}, {30, SHIFT, 38}, },
+			{{-1, REDUCE, 1}, },
+			{{-1, ERROR, 24}, {23, SHIFT, 39}, },
+			{{-1, REDUCE, 3}, },
+			{{-1, REDUCE, 7}, {30, SHIFT, 40}, },
+			{{-1, REDUCE, 9}, {30, SHIFT, 41}, },
+			{{-1, REDUCE, 11}, {30, SHIFT, 42}, },
+			{{-1, REDUCE, 13}, {30, SHIFT, 43}, },
+			{{-1, REDUCE, 15}, {30, SHIFT, 44}, },
+			{{-1, REDUCE, 17}, {30, SHIFT, 45}, },
+			{{-1, REDUCE, 19}, {30, SHIFT, 46}, },
+			{{-1, REDUCE, 21}, {30, SHIFT, 47}, },
+			{{-1, REDUCE, 23}, {30, SHIFT, 48}, },
+			{{-1, REDUCE, 25}, {30, SHIFT, 49}, },
+			{{-1, REDUCE, 27}, {30, SHIFT, 50}, },
+			{{-1, REDUCE, 29}, {30, SHIFT, 51}, },
+			{{-1, ERROR, 38}, {24, SHIFT, 52}, {28, SHIFT, 53}, {30, SHIFT, 54}, },
+			{{-1, REDUCE, 36}, },
+			{{-1, REDUCE, 8}, },
+			{{-1, REDUCE, 10}, },
+			{{-1, REDUCE, 12}, },
+			{{-1, REDUCE, 14}, },
+			{{-1, REDUCE, 16}, },
+			{{-1, REDUCE, 18}, },
+			{{-1, REDUCE, 20}, },
+			{{-1, REDUCE, 22}, },
+			{{-1, REDUCE, 24}, },
+			{{-1, REDUCE, 26}, },
+			{{-1, REDUCE, 28}, },
+			{{-1, REDUCE, 30}, },
+			{{-1, ERROR, 52}, {28, SHIFT, 55}, {30, SHIFT, 56}, },
+			{{-1, REDUCE, 31}, },
+			{{-1, ERROR, 54}, {28, SHIFT, 57}, },
+			{{-1, REDUCE, 32}, },
+			{{-1, ERROR, 56}, {28, SHIFT, 58}, },
+			{{-1, REDUCE, 33}, },
+			{{-1, REDUCE, 34}, },
         };*/
     private static int[][][] gotoTable;
 /*      {
-			{{-1, 3}, {2, 6}, },
-			{{-1, 4}, {7, 13}, {8, 14}, },
-			{{-1, 5}, {9, 15}, {10, 16}, {11, 17}, },
+			{{-1, 3}, },
+			{{-1, 4}, },
+			{{-1, 6}, },
+			{{-1, 23}, {18, 25}, },
+			{{-1, 7}, },
+			{{-1, 18}, },
+			{{-1, 19}, },
+			{{-1, 20}, },
         };*/
     private static String[] errorMessages;
 /*      {
-			"expecting: number, '('",
-			"expecting: '+', '-', '*', '/', '%', ')', EOF",
-			"expecting: '+', '-', EOF",
-			"expecting: '+', '-', ')'",
+			"expecting: next, on",
+			"expecting: monday, thuesday, wednesday, tuersday, friday, saturday, sunday, weekend, month, year",
+			"expecting: monday, thuesday, wednesday, tuersday, friday, saturday, sunday, weekend, month, year, number",
+			"expecting: EOF",
+			"expecting: '.'",
+			"expecting: at, EOF",
+			"expecting: at, number, EOF",
+			"expecting: january, february, march, april, may, june, july, august, september, october, november, december, at, number, EOF",
+			"expecting: number",
+			"expecting: ':', oclock, number",
+			"expecting: oclock, number",
+			"expecting: oclock",
         };*/
     private static int[] errors;
 /*      {
-			0, 1, 0, 2, 1, 1, 3, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 
+			0, 1, 2, 3, 1, 4, 5, 6, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 8, 3, 4, 3, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 9, 6, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 10, 3, 11, 3, 11, 3, 3, 
         };*/
 
     static 

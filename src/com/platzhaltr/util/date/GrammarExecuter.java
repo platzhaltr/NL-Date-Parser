@@ -24,7 +24,7 @@ public class GrammarExecuter {
 			// Apply the translation.
 			tree.apply(new Translation());
 
-			// tree.apply( new ASTDisplay() );
+			tree.apply(new ASTDisplay());
 		} catch (ParserException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
