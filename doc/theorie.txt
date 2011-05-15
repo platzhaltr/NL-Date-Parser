@@ -50,6 +50,8 @@ Treffen mit Klaus bis 	x Uhr	( -> ab jetzt, bis Zeitpunkt angegeben )
 Am Karfreitag mit Olli programmieren ( -> Karfreitag: woher das Datum; ganztätig )
 Karfreitag 13Uhr mit Olli programmieren; 2Stunden ( -> Karfreitag: woher das Datum holen; ganztätig )
 
+Am letzten Freitag im Monat
+
 Über das Osterwochenende treffen mit Klaus Eltern ( -> woher das Datum holen )
 
 Ab morgen eine Woche Urlaub
@@ -65,4 +67,6 @@ Allgemein/Ideen
  -- "@rule Immer zwischen 12-13uhr Mittagspause"
  -- "@rule Wenn ... dann ... " sinnvoll? 
  -- Bei Eintrag eines Termins stößt das Programm auf einen Widerspruch; anzeigen
-		
+ -- "@rule jeden Tag etwas tun"
+ -- "@rule jeden 2. Mittwoch"
+ -- 		

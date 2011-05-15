@@ -60,7 +60,7 @@ Ignored Tokens
 Productions
 
 entry {-> entry} =
-	{absolute}	on absolute	time? { -> New entry.date(absolute.date, time.time) }
+	{absolute}	on absolute time?  { -> New entry.date(absolute.date, time.time) }
 |	{relative}	prefix relative time? { -> New entry.relative(relative.relative, time.time) }
 ;
 
