@@ -57,6 +57,19 @@ Am letzten Freitag im Monat
 Ab morgen eine Woche Urlaub
 Ab morgen für 2 Tage Urlaub
 
+Wiederholende Zeitangaben
+=========================
+
+Jeder 2. Sonntag
+Jeder 2. Werktag
+Jedes 2. Wochenende
+Jeder 3. Mai
+Jeder 03. eines Monats
+Jeden/Immer Mittwoch/Mittwochs
+Immer am 3. eines Monats
+Alle 2 Wochen am Montag
+
+
 Allgemein/Ideen
 =================
 
@@ -69,4 +82,12 @@ Allgemein/Ideen
  -- Bei Eintrag eines Termins stößt das Programm auf einen Widerspruch; anzeigen
  -- "@rule jeden Tag etwas tun"
  -- "@rule jeden 2. Mittwoch"
- -- 		
+ -- ...
+ 
+- Importieren von
+ -- festen Daten von Service (Internet)
+ -- Feiertage
+ -- Bundesliga termine
+ -- etc.
+
+

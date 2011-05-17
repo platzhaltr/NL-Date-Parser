@@ -84,6 +84,11 @@ public class AnalysisAdapter implements Analysis
         defaultCase(node);
     }
 
+    public void caseARepeatingEntry(ARepeatingEntry node)
+    {
+        defaultCase(node);
+    }
+
     public void caseAMondayRelative(AMondayRelative node)
     {
         defaultCase(node);
@@ -120,6 +125,11 @@ public class AnalysisAdapter implements Analysis
     }
 
     public void caseAWeekendRelative(AWeekendRelative node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseAWeekRelative(AWeekRelative node)
     {
         defaultCase(node);
     }
@@ -249,12 +259,22 @@ public class AnalysisAdapter implements Analysis
         defaultCase(node);
     }
 
+    public void caseTWeek(TWeek node)
+    {
+        defaultCase(node);
+    }
+
     public void caseTMonth(TMonth node)
     {
         defaultCase(node);
     }
 
     public void caseTYear(TYear node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTEvery(TEvery node)
     {
         defaultCase(node);
     }

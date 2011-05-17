@@ -190,273 +190,291 @@ public class Parser
 			push(goTo(0), list);
 		    }
 		    break;
-                    case 4: /* reduce AOnPrefix */
+                    case 4: /* reduce AArepeatingentry1Entry */
 		    {
 			ArrayList list = new4();
-			push(goTo(1), list);
+			push(goTo(0), list);
 		    }
 		    break;
-                    case 5: /* reduce ANextPrefix */
+                    case 5: /* reduce AArepeatingentry2Entry */
 		    {
 			ArrayList list = new5();
+			push(goTo(0), list);
+		    }
+		    break;
+                    case 6: /* reduce AOnPrefix */
+		    {
+			ArrayList list = new6();
 			push(goTo(1), list);
 		    }
 		    break;
-                    case 6: /* reduce ALatinAbsolute */
-		    {
-			ArrayList list = new6();
-			push(goTo(2), list);
-		    }
-		    break;
-                    case 7: /* reduce AAjanuaryabsolute1Absolute */
+                    case 7: /* reduce ANextPrefix */
 		    {
 			ArrayList list = new7();
-			push(goTo(2), list);
+			push(goTo(1), list);
 		    }
 		    break;
-                    case 8: /* reduce AAjanuaryabsolute2Absolute */
+                    case 8: /* reduce ALatinAbsolute */
 		    {
 			ArrayList list = new8();
 			push(goTo(2), list);
 		    }
 		    break;
-                    case 9: /* reduce AAfebruaryabsolute1Absolute */
+                    case 9: /* reduce AAjanuaryabsolute1Absolute */
 		    {
 			ArrayList list = new9();
 			push(goTo(2), list);
 		    }
 		    break;
-                    case 10: /* reduce AAfebruaryabsolute2Absolute */
+                    case 10: /* reduce AAjanuaryabsolute2Absolute */
 		    {
 			ArrayList list = new10();
 			push(goTo(2), list);
 		    }
 		    break;
-                    case 11: /* reduce AAmarchabsolute1Absolute */
+                    case 11: /* reduce AAfebruaryabsolute1Absolute */
 		    {
 			ArrayList list = new11();
 			push(goTo(2), list);
 		    }
 		    break;
-                    case 12: /* reduce AAmarchabsolute2Absolute */
+                    case 12: /* reduce AAfebruaryabsolute2Absolute */
 		    {
 			ArrayList list = new12();
 			push(goTo(2), list);
 		    }
 		    break;
-                    case 13: /* reduce AAaprilabsolute1Absolute */
+                    case 13: /* reduce AAmarchabsolute1Absolute */
 		    {
 			ArrayList list = new13();
 			push(goTo(2), list);
 		    }
 		    break;
-                    case 14: /* reduce AAaprilabsolute2Absolute */
+                    case 14: /* reduce AAmarchabsolute2Absolute */
 		    {
 			ArrayList list = new14();
 			push(goTo(2), list);
 		    }
 		    break;
-                    case 15: /* reduce AAmayabsolute1Absolute */
+                    case 15: /* reduce AAaprilabsolute1Absolute */
 		    {
 			ArrayList list = new15();
 			push(goTo(2), list);
 		    }
 		    break;
-                    case 16: /* reduce AAmayabsolute2Absolute */
+                    case 16: /* reduce AAaprilabsolute2Absolute */
 		    {
 			ArrayList list = new16();
 			push(goTo(2), list);
 		    }
 		    break;
-                    case 17: /* reduce AAjuneabsolute1Absolute */
+                    case 17: /* reduce AAmayabsolute1Absolute */
 		    {
 			ArrayList list = new17();
 			push(goTo(2), list);
 		    }
 		    break;
-                    case 18: /* reduce AAjuneabsolute2Absolute */
+                    case 18: /* reduce AAmayabsolute2Absolute */
 		    {
 			ArrayList list = new18();
 			push(goTo(2), list);
 		    }
 		    break;
-                    case 19: /* reduce AAjulyabsolute1Absolute */
+                    case 19: /* reduce AAjuneabsolute1Absolute */
 		    {
 			ArrayList list = new19();
 			push(goTo(2), list);
 		    }
 		    break;
-                    case 20: /* reduce AAjulyabsolute2Absolute */
+                    case 20: /* reduce AAjuneabsolute2Absolute */
 		    {
 			ArrayList list = new20();
 			push(goTo(2), list);
 		    }
 		    break;
-                    case 21: /* reduce AAaugustabsolute1Absolute */
+                    case 21: /* reduce AAjulyabsolute1Absolute */
 		    {
 			ArrayList list = new21();
 			push(goTo(2), list);
 		    }
 		    break;
-                    case 22: /* reduce AAaugustabsolute2Absolute */
+                    case 22: /* reduce AAjulyabsolute2Absolute */
 		    {
 			ArrayList list = new22();
 			push(goTo(2), list);
 		    }
 		    break;
-                    case 23: /* reduce AAseptemberabsolute1Absolute */
+                    case 23: /* reduce AAaugustabsolute1Absolute */
 		    {
 			ArrayList list = new23();
 			push(goTo(2), list);
 		    }
 		    break;
-                    case 24: /* reduce AAseptemberabsolute2Absolute */
+                    case 24: /* reduce AAaugustabsolute2Absolute */
 		    {
 			ArrayList list = new24();
 			push(goTo(2), list);
 		    }
 		    break;
-                    case 25: /* reduce AAoctoberabsolute1Absolute */
+                    case 25: /* reduce AAseptemberabsolute1Absolute */
 		    {
 			ArrayList list = new25();
 			push(goTo(2), list);
 		    }
 		    break;
-                    case 26: /* reduce AAoctoberabsolute2Absolute */
+                    case 26: /* reduce AAseptemberabsolute2Absolute */
 		    {
 			ArrayList list = new26();
 			push(goTo(2), list);
 		    }
 		    break;
-                    case 27: /* reduce AAnovemberabsolute1Absolute */
+                    case 27: /* reduce AAoctoberabsolute1Absolute */
 		    {
 			ArrayList list = new27();
 			push(goTo(2), list);
 		    }
 		    break;
-                    case 28: /* reduce AAnovemberabsolute2Absolute */
+                    case 28: /* reduce AAoctoberabsolute2Absolute */
 		    {
 			ArrayList list = new28();
 			push(goTo(2), list);
 		    }
 		    break;
-                    case 29: /* reduce AAdecemberabsolute1Absolute */
+                    case 29: /* reduce AAnovemberabsolute1Absolute */
 		    {
 			ArrayList list = new29();
 			push(goTo(2), list);
 		    }
 		    break;
-                    case 30: /* reduce AAdecemberabsolute2Absolute */
+                    case 30: /* reduce AAnovemberabsolute2Absolute */
 		    {
 			ArrayList list = new30();
 			push(goTo(2), list);
 		    }
 		    break;
-                    case 31: /* reduce AAtime1Time */
+                    case 31: /* reduce AAdecemberabsolute1Absolute */
 		    {
 			ArrayList list = new31();
-			push(goTo(3), list);
+			push(goTo(2), list);
 		    }
 		    break;
-                    case 32: /* reduce AAtime2Time */
+                    case 32: /* reduce AAdecemberabsolute2Absolute */
 		    {
 			ArrayList list = new32();
-			push(goTo(3), list);
+			push(goTo(2), list);
 		    }
 		    break;
-                    case 33: /* reduce AAtime3Time */
+                    case 33: /* reduce AAtime1Time */
 		    {
 			ArrayList list = new33();
 			push(goTo(3), list);
 		    }
 		    break;
-                    case 34: /* reduce AAtime4Time */
+                    case 34: /* reduce AAtime2Time */
 		    {
 			ArrayList list = new34();
 			push(goTo(3), list);
 		    }
 		    break;
-                    case 35: /* reduce ASingleDate */
+                    case 35: /* reduce AAtime3Time */
 		    {
 			ArrayList list = new35();
-			push(goTo(4), list);
+			push(goTo(3), list);
 		    }
 		    break;
-                    case 36: /* reduce ANextDate */
+                    case 36: /* reduce AAtime4Time */
 		    {
 			ArrayList list = new36();
+			push(goTo(3), list);
+		    }
+		    break;
+                    case 37: /* reduce ASingleDate */
+		    {
+			ArrayList list = new37();
 			push(goTo(4), list);
 		    }
 		    break;
-                    case 37: /* reduce AWorkingdayRelative */
-		    {
-			ArrayList list = new37();
-			push(goTo(5), list);
-		    }
-		    break;
-                    case 38: /* reduce AWeekenddayRelative */
+                    case 38: /* reduce ANextDate */
 		    {
 			ArrayList list = new38();
-			push(goTo(5), list);
+			push(goTo(4), list);
 		    }
 		    break;
-                    case 39: /* reduce AWeekendRelative */
+                    case 39: /* reduce AWorkingdayRelative */
 		    {
 			ArrayList list = new39();
 			push(goTo(5), list);
 		    }
 		    break;
-                    case 40: /* reduce AMonthRelative */
+                    case 40: /* reduce AWeekenddayRelative */
 		    {
 			ArrayList list = new40();
 			push(goTo(5), list);
 		    }
 		    break;
-                    case 41: /* reduce AYearRelative */
+                    case 41: /* reduce AWeekendRelative */
 		    {
 			ArrayList list = new41();
 			push(goTo(5), list);
 		    }
 		    break;
-                    case 42: /* reduce AMondayWorkingday */
+                    case 42: /* reduce AWeekRelative */
 		    {
 			ArrayList list = new42();
-			push(goTo(6), list);
+			push(goTo(5), list);
 		    }
 		    break;
-                    case 43: /* reduce AThuesdayWorkingday */
+                    case 43: /* reduce AMonthRelative */
 		    {
 			ArrayList list = new43();
-			push(goTo(6), list);
+			push(goTo(5), list);
 		    }
 		    break;
-                    case 44: /* reduce AWednesdayWorkingday */
+                    case 44: /* reduce AYearRelative */
 		    {
 			ArrayList list = new44();
-			push(goTo(6), list);
+			push(goTo(5), list);
 		    }
 		    break;
-                    case 45: /* reduce ATuersdayWorkingday */
+                    case 45: /* reduce AMondayWorkingday */
 		    {
 			ArrayList list = new45();
 			push(goTo(6), list);
 		    }
 		    break;
-                    case 46: /* reduce AFridayWorkingday */
+                    case 46: /* reduce AThuesdayWorkingday */
 		    {
 			ArrayList list = new46();
 			push(goTo(6), list);
 		    }
 		    break;
-                    case 47: /* reduce ASaturdayWeekendday */
+                    case 47: /* reduce AWednesdayWorkingday */
 		    {
 			ArrayList list = new47();
+			push(goTo(6), list);
+		    }
+		    break;
+                    case 48: /* reduce ATuersdayWorkingday */
+		    {
+			ArrayList list = new48();
+			push(goTo(6), list);
+		    }
+		    break;
+                    case 49: /* reduce AFridayWorkingday */
+		    {
+			ArrayList list = new49();
+			push(goTo(6), list);
+		    }
+		    break;
+                    case 50: /* reduce ASaturdayWeekendday */
+		    {
+			ArrayList list = new50();
 			push(goTo(7), list);
 		    }
 		    break;
-                    case 48: /* reduce ASundayWeekendday */
+                    case 51: /* reduce ASundayWeekendday */
 		    {
-			ArrayList list = new48();
+			ArrayList list = new51();
 			push(goTo(7), list);
 		    }
 		    break;
@@ -572,7 +590,61 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new4() /* reduce AOnPrefix */
+    ArrayList new4() /* reduce AArepeatingentry1Entry */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList4 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PEntry pentryNode1;
+        {
+            // Block
+        TNumber tnumberNode2;
+        PRelative prelativeNode3;
+        @SuppressWarnings("unused") Object nullNode4 = null;
+        tnumberNode2 = (TNumber)nodeArrayList2.get(0);
+        prelativeNode3 = (PRelative)nodeArrayList4.get(0);
+
+        pentryNode1 = new ARepeatingEntry(tnumberNode2, prelativeNode3, null);
+        }
+	nodeList.add(pentryNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new5() /* reduce AArepeatingentry2Entry */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList5 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList4 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PEntry pentryNode1;
+        {
+            // Block
+        TNumber tnumberNode2;
+        PRelative prelativeNode3;
+        PTime ptimeNode4;
+        tnumberNode2 = (TNumber)nodeArrayList2.get(0);
+        prelativeNode3 = (PRelative)nodeArrayList4.get(0);
+        ptimeNode4 = (PTime)nodeArrayList5.get(0);
+
+        pentryNode1 = new ARepeatingEntry(tnumberNode2, prelativeNode3, ptimeNode4);
+        }
+	nodeList.add(pentryNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new6() /* reduce AOnPrefix */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -583,7 +655,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new5() /* reduce ANextPrefix */
+    ArrayList new7() /* reduce ANextPrefix */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -594,7 +666,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new6() /* reduce ALatinAbsolute */
+    ArrayList new8() /* reduce ALatinAbsolute */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -622,7 +694,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new7() /* reduce AAjanuaryabsolute1Absolute */
+    ArrayList new9() /* reduce AAjanuaryabsolute1Absolute */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -652,7 +724,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new8() /* reduce AAjanuaryabsolute2Absolute */
+    ArrayList new10() /* reduce AAjanuaryabsolute2Absolute */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -689,7 +761,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new9() /* reduce AAfebruaryabsolute1Absolute */
+    ArrayList new11() /* reduce AAfebruaryabsolute1Absolute */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -719,7 +791,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new10() /* reduce AAfebruaryabsolute2Absolute */
+    ArrayList new12() /* reduce AAfebruaryabsolute2Absolute */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -756,7 +828,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new11() /* reduce AAmarchabsolute1Absolute */
+    ArrayList new13() /* reduce AAmarchabsolute1Absolute */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -786,7 +858,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new12() /* reduce AAmarchabsolute2Absolute */
+    ArrayList new14() /* reduce AAmarchabsolute2Absolute */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -823,7 +895,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new13() /* reduce AAaprilabsolute1Absolute */
+    ArrayList new15() /* reduce AAaprilabsolute1Absolute */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -853,7 +925,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new14() /* reduce AAaprilabsolute2Absolute */
+    ArrayList new16() /* reduce AAaprilabsolute2Absolute */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -890,7 +962,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new15() /* reduce AAmayabsolute1Absolute */
+    ArrayList new17() /* reduce AAmayabsolute1Absolute */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -920,7 +992,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new16() /* reduce AAmayabsolute2Absolute */
+    ArrayList new18() /* reduce AAmayabsolute2Absolute */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -957,7 +1029,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new17() /* reduce AAjuneabsolute1Absolute */
+    ArrayList new19() /* reduce AAjuneabsolute1Absolute */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -987,7 +1059,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new18() /* reduce AAjuneabsolute2Absolute */
+    ArrayList new20() /* reduce AAjuneabsolute2Absolute */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1024,7 +1096,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new19() /* reduce AAjulyabsolute1Absolute */
+    ArrayList new21() /* reduce AAjulyabsolute1Absolute */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1054,7 +1126,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new20() /* reduce AAjulyabsolute2Absolute */
+    ArrayList new22() /* reduce AAjulyabsolute2Absolute */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1091,7 +1163,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new21() /* reduce AAaugustabsolute1Absolute */
+    ArrayList new23() /* reduce AAaugustabsolute1Absolute */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1121,7 +1193,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new22() /* reduce AAaugustabsolute2Absolute */
+    ArrayList new24() /* reduce AAaugustabsolute2Absolute */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1158,7 +1230,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new23() /* reduce AAseptemberabsolute1Absolute */
+    ArrayList new25() /* reduce AAseptemberabsolute1Absolute */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1188,7 +1260,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new24() /* reduce AAseptemberabsolute2Absolute */
+    ArrayList new26() /* reduce AAseptemberabsolute2Absolute */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1225,7 +1297,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new25() /* reduce AAoctoberabsolute1Absolute */
+    ArrayList new27() /* reduce AAoctoberabsolute1Absolute */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1255,7 +1327,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new26() /* reduce AAoctoberabsolute2Absolute */
+    ArrayList new28() /* reduce AAoctoberabsolute2Absolute */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1292,7 +1364,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new27() /* reduce AAnovemberabsolute1Absolute */
+    ArrayList new29() /* reduce AAnovemberabsolute1Absolute */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1322,7 +1394,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new28() /* reduce AAnovemberabsolute2Absolute */
+    ArrayList new30() /* reduce AAnovemberabsolute2Absolute */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1359,7 +1431,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new29() /* reduce AAdecemberabsolute1Absolute */
+    ArrayList new31() /* reduce AAdecemberabsolute1Absolute */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1389,7 +1461,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new30() /* reduce AAdecemberabsolute2Absolute */
+    ArrayList new32() /* reduce AAdecemberabsolute2Absolute */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1426,7 +1498,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new31() /* reduce AAtime1Time */
+    ArrayList new33() /* reduce AAtime1Time */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1449,7 +1521,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new32() /* reduce AAtime2Time */
+    ArrayList new34() /* reduce AAtime2Time */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1473,7 +1545,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new33() /* reduce AAtime3Time */
+    ArrayList new35() /* reduce AAtime3Time */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1498,7 +1570,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new34() /* reduce AAtime4Time */
+    ArrayList new36() /* reduce AAtime4Time */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1524,7 +1596,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new35() /* reduce ASingleDate */
+    ArrayList new37() /* reduce ASingleDate */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1547,7 +1619,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new36() /* reduce ANextDate */
+    ArrayList new38() /* reduce ANextDate */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1577,7 +1649,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new37() /* reduce AWorkingdayRelative */
+    ArrayList new39() /* reduce AWorkingdayRelative */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1591,7 +1663,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new38() /* reduce AWeekenddayRelative */
+    ArrayList new40() /* reduce AWeekenddayRelative */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1605,7 +1677,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new39() /* reduce AWeekendRelative */
+    ArrayList new41() /* reduce AWeekendRelative */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1625,7 +1697,27 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new40() /* reduce AMonthRelative */
+    ArrayList new42() /* reduce AWeekRelative */
+    {
+        @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
+
+        @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
+        PRelative prelativeNode1;
+        {
+            // Block
+        TWeek tweekNode2;
+        tweekNode2 = (TWeek)nodeArrayList1.get(0);
+
+        prelativeNode1 = new AWeekRelative(tweekNode2);
+        }
+	nodeList.add(prelativeNode1);
+        return nodeList;
+    }
+
+
+
+    @SuppressWarnings("unchecked")
+    ArrayList new43() /* reduce AMonthRelative */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1645,7 +1737,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new41() /* reduce AYearRelative */
+    ArrayList new44() /* reduce AYearRelative */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1665,7 +1757,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new42() /* reduce AMondayWorkingday */
+    ArrayList new45() /* reduce AMondayWorkingday */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1685,7 +1777,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new43() /* reduce AThuesdayWorkingday */
+    ArrayList new46() /* reduce AThuesdayWorkingday */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1705,7 +1797,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new44() /* reduce AWednesdayWorkingday */
+    ArrayList new47() /* reduce AWednesdayWorkingday */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1725,7 +1817,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new45() /* reduce ATuersdayWorkingday */
+    ArrayList new48() /* reduce ATuersdayWorkingday */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1745,7 +1837,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new46() /* reduce AFridayWorkingday */
+    ArrayList new49() /* reduce AFridayWorkingday */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1765,7 +1857,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new47() /* reduce ASaturdayWeekendday */
+    ArrayList new50() /* reduce ASaturdayWeekendday */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1785,7 +1877,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new48() /* reduce ASundayWeekendday */
+    ArrayList new51() /* reduce ASundayWeekendday */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1806,47 +1898,52 @@ public class Parser
 
     private static int[][][] actionTable;
 /*      {
-			{{-1, ERROR, 0}, {0, SHIFT, 1}, {25, SHIFT, 2}, },
-			{{-1, REDUCE, 5}, },
-			{{-1, REDUCE, 4}, {30, SHIFT, 5}, },
-			{{-1, ERROR, 3}, {31, ACCEPT, -1}, },
-			{{-1, ERROR, 4}, {1, SHIFT, 8}, {2, SHIFT, 9}, {3, SHIFT, 10}, {4, SHIFT, 11}, {5, SHIFT, 12}, {6, SHIFT, 13}, {7, SHIFT, 14}, {8, SHIFT, 15}, {9, SHIFT, 16}, {10, SHIFT, 17}, },
-			{{-1, ERROR, 5}, {23, SHIFT, 21}, },
-			{{-1, REDUCE, 0}, {27, SHIFT, 22}, },
-			{{-1, REDUCE, 6}, {30, SHIFT, 24}, },
-			{{-1, REDUCE, 42}, },
-			{{-1, REDUCE, 43}, },
-			{{-1, REDUCE, 44}, },
+			{{-1, ERROR, 0}, {0, SHIFT, 1}, {12, SHIFT, 2}, {27, SHIFT, 3}, },
+			{{-1, REDUCE, 7}, },
+			{{-1, ERROR, 2}, {32, SHIFT, 6}, },
+			{{-1, REDUCE, 6}, {32, SHIFT, 7}, },
+			{{-1, ERROR, 4}, {33, ACCEPT, -1}, },
+			{{-1, ERROR, 5}, {1, SHIFT, 10}, {2, SHIFT, 11}, {3, SHIFT, 12}, {4, SHIFT, 13}, {5, SHIFT, 14}, {6, SHIFT, 15}, {7, SHIFT, 16}, {8, SHIFT, 17}, {9, SHIFT, 18}, {10, SHIFT, 19}, {11, SHIFT, 20}, },
+			{{-1, ERROR, 6}, {25, SHIFT, 24}, },
+			{{-1, ERROR, 7}, {25, SHIFT, 25}, },
+			{{-1, REDUCE, 0}, {29, SHIFT, 26}, },
+			{{-1, REDUCE, 8}, {32, SHIFT, 28}, },
 			{{-1, REDUCE, 45}, },
 			{{-1, REDUCE, 46}, },
 			{{-1, REDUCE, 47}, },
 			{{-1, REDUCE, 48}, },
+			{{-1, REDUCE, 49}, },
+			{{-1, REDUCE, 50}, },
+			{{-1, REDUCE, 51}, },
+			{{-1, REDUCE, 41}, },
+			{{-1, REDUCE, 42}, },
+			{{-1, REDUCE, 43}, },
+			{{-1, REDUCE, 44}, },
+			{{-1, REDUCE, 2}, {29, SHIFT, 26}, },
 			{{-1, REDUCE, 39}, },
 			{{-1, REDUCE, 40}, },
-			{{-1, REDUCE, 41}, },
-			{{-1, REDUCE, 2}, {27, SHIFT, 22}, },
-			{{-1, REDUCE, 37}, },
-			{{-1, REDUCE, 38}, },
-			{{-1, REDUCE, 35}, {11, SHIFT, 26}, {12, SHIFT, 27}, {13, SHIFT, 28}, {14, SHIFT, 29}, {15, SHIFT, 30}, {16, SHIFT, 31}, {17, SHIFT, 32}, {18, SHIFT, 33}, {19, SHIFT, 34}, {20, SHIFT, 35}, {21, SHIFT, 36}, {22, SHIFT, 37}, },
-			{{-1, ERROR, 22}, {30, SHIFT, 38}, },
+			{{-1, ERROR, 24}, {1, SHIFT, 10}, {2, SHIFT, 11}, {3, SHIFT, 12}, {4, SHIFT, 13}, {5, SHIFT, 14}, {6, SHIFT, 15}, {7, SHIFT, 16}, {8, SHIFT, 17}, {9, SHIFT, 18}, {10, SHIFT, 19}, {11, SHIFT, 20}, },
+			{{-1, REDUCE, 37}, {13, SHIFT, 31}, {14, SHIFT, 32}, {15, SHIFT, 33}, {16, SHIFT, 34}, {17, SHIFT, 35}, {18, SHIFT, 36}, {19, SHIFT, 37}, {20, SHIFT, 38}, {21, SHIFT, 39}, {22, SHIFT, 40}, {23, SHIFT, 41}, {24, SHIFT, 42}, },
+			{{-1, ERROR, 26}, {32, SHIFT, 43}, },
 			{{-1, REDUCE, 1}, },
-			{{-1, ERROR, 24}, {23, SHIFT, 39}, },
+			{{-1, ERROR, 28}, {25, SHIFT, 44}, },
 			{{-1, REDUCE, 3}, },
-			{{-1, REDUCE, 7}, {30, SHIFT, 40}, },
-			{{-1, REDUCE, 9}, {30, SHIFT, 41}, },
-			{{-1, REDUCE, 11}, {30, SHIFT, 42}, },
-			{{-1, REDUCE, 13}, {30, SHIFT, 43}, },
-			{{-1, REDUCE, 15}, {30, SHIFT, 44}, },
-			{{-1, REDUCE, 17}, {30, SHIFT, 45}, },
-			{{-1, REDUCE, 19}, {30, SHIFT, 46}, },
-			{{-1, REDUCE, 21}, {30, SHIFT, 47}, },
-			{{-1, REDUCE, 23}, {30, SHIFT, 48}, },
-			{{-1, REDUCE, 25}, {30, SHIFT, 49}, },
-			{{-1, REDUCE, 27}, {30, SHIFT, 50}, },
-			{{-1, REDUCE, 29}, {30, SHIFT, 51}, },
-			{{-1, ERROR, 38}, {24, SHIFT, 52}, {28, SHIFT, 53}, {30, SHIFT, 54}, },
-			{{-1, REDUCE, 36}, },
-			{{-1, REDUCE, 8}, },
+			{{-1, REDUCE, 4}, {29, SHIFT, 26}, },
+			{{-1, REDUCE, 9}, {32, SHIFT, 46}, },
+			{{-1, REDUCE, 11}, {32, SHIFT, 47}, },
+			{{-1, REDUCE, 13}, {32, SHIFT, 48}, },
+			{{-1, REDUCE, 15}, {32, SHIFT, 49}, },
+			{{-1, REDUCE, 17}, {32, SHIFT, 50}, },
+			{{-1, REDUCE, 19}, {32, SHIFT, 51}, },
+			{{-1, REDUCE, 21}, {32, SHIFT, 52}, },
+			{{-1, REDUCE, 23}, {32, SHIFT, 53}, },
+			{{-1, REDUCE, 25}, {32, SHIFT, 54}, },
+			{{-1, REDUCE, 27}, {32, SHIFT, 55}, },
+			{{-1, REDUCE, 29}, {32, SHIFT, 56}, },
+			{{-1, REDUCE, 31}, {32, SHIFT, 57}, },
+			{{-1, ERROR, 43}, {26, SHIFT, 58}, {30, SHIFT, 59}, {32, SHIFT, 60}, },
+			{{-1, REDUCE, 38}, },
+			{{-1, REDUCE, 5}, },
 			{{-1, REDUCE, 10}, },
 			{{-1, REDUCE, 12}, },
 			{{-1, REDUCE, 14}, },
@@ -1858,43 +1955,44 @@ public class Parser
 			{{-1, REDUCE, 26}, },
 			{{-1, REDUCE, 28}, },
 			{{-1, REDUCE, 30}, },
-			{{-1, ERROR, 52}, {28, SHIFT, 55}, {30, SHIFT, 56}, },
-			{{-1, REDUCE, 31}, },
-			{{-1, ERROR, 54}, {28, SHIFT, 57}, },
 			{{-1, REDUCE, 32}, },
-			{{-1, ERROR, 56}, {28, SHIFT, 58}, },
+			{{-1, ERROR, 58}, {30, SHIFT, 61}, {32, SHIFT, 62}, },
 			{{-1, REDUCE, 33}, },
+			{{-1, ERROR, 60}, {30, SHIFT, 63}, },
 			{{-1, REDUCE, 34}, },
+			{{-1, ERROR, 62}, {30, SHIFT, 64}, },
+			{{-1, REDUCE, 35}, },
+			{{-1, REDUCE, 36}, },
         };*/
     private static int[][][] gotoTable;
 /*      {
-			{{-1, 3}, },
 			{{-1, 4}, },
-			{{-1, 6}, },
-			{{-1, 23}, {18, 25}, },
-			{{-1, 7}, },
-			{{-1, 18}, },
-			{{-1, 19}, },
-			{{-1, 20}, },
+			{{-1, 5}, },
+			{{-1, 8}, },
+			{{-1, 27}, {21, 29}, {30, 45}, },
+			{{-1, 9}, },
+			{{-1, 21}, {24, 30}, },
+			{{-1, 22}, },
+			{{-1, 23}, },
         };*/
     private static String[] errorMessages;
 /*      {
-			"expecting: next, on",
-			"expecting: monday, thuesday, wednesday, tuersday, friday, saturday, sunday, weekend, month, year",
-			"expecting: monday, thuesday, wednesday, tuersday, friday, saturday, sunday, weekend, month, year, number",
+			"expecting: next, every, on",
+			"expecting: monday, thuesday, wednesday, tuersday, friday, saturday, sunday, weekend, week, month, year",
+			"expecting: number",
+			"expecting: monday, thuesday, wednesday, tuersday, friday, saturday, sunday, weekend, week, month, year, number",
 			"expecting: EOF",
 			"expecting: '.'",
 			"expecting: at, EOF",
 			"expecting: at, number, EOF",
 			"expecting: january, february, march, april, may, june, july, august, september, october, november, december, at, number, EOF",
-			"expecting: number",
 			"expecting: ':', oclock, number",
 			"expecting: oclock, number",
 			"expecting: oclock",
         };*/
     private static int[] errors;
 /*      {
-			0, 1, 2, 3, 1, 4, 5, 6, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 8, 3, 4, 3, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 9, 6, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 10, 3, 11, 3, 11, 3, 3, 
+			0, 1, 2, 3, 4, 1, 5, 5, 6, 7, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 1, 8, 2, 4, 5, 4, 6, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 9, 7, 4, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 10, 4, 11, 4, 11, 4, 4, 
         };*/
 
     static 

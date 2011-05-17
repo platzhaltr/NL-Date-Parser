@@ -15,6 +15,7 @@ public interface Analysis extends Switch
     void caseANextEntry(ANextEntry node);
     void caseARelativeEntry(ARelativeEntry node);
     void caseADateEntry(ADateEntry node);
+    void caseARepeatingEntry(ARepeatingEntry node);
     void caseAMondayRelative(AMondayRelative node);
     void caseAThuesdayRelative(AThuesdayRelative node);
     void caseAWednesdayRelative(AWednesdayRelative node);
@@ -23,6 +24,7 @@ public interface Analysis extends Switch
     void caseASaturdayRelative(ASaturdayRelative node);
     void caseASundayRelative(ASundayRelative node);
     void caseAWeekendRelative(AWeekendRelative node);
+    void caseAWeekRelative(AWeekRelative node);
     void caseAMonthRelative(AMonthRelative node);
     void caseAYearRelative(AYearRelative node);
     void caseALatinDate(ALatinDate node);
@@ -49,8 +51,10 @@ public interface Analysis extends Switch
     void caseTSaturday(TSaturday node);
     void caseTSunday(TSunday node);
     void caseTWeekend(TWeekend node);
+    void caseTWeek(TWeek node);
     void caseTMonth(TMonth node);
     void caseTYear(TYear node);
+    void caseTEvery(TEvery node);
     void caseTJanuary(TJanuary node);
     void caseTFebruary(TFebruary node);
     void caseTMarch(TMarch node);

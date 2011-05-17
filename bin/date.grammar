@@ -25,9 +25,12 @@ Tokens
 	saturday = ( 'Samstag' | 'samstag' | 'sa' );
 	sunday = ( 'Sonntag' | 'sonntag' | 'so' );
 	
-	weekend = ( 'Wochenende' );
+	weekend = ( 'Wochenende' | 'wochenende' | 'WE' | 'we' | 'We' );
+	week = ( 'Woche' | 'woche' );
 	month = ( 'Monat' );
 	year = ( 'Jahr' );
+	
+	every = ( 'Jeder' | 'jeder' | 'Jeden' | 'jeden' | 'Jedes' | 'jedes' );
 	
 	january = january;
 	february = february;
@@ -62,6 +65,7 @@ Productions
 entry {-> entry} =
 	{absolute}	on absolute time?  { -> New entry.date(absolute.date, time.time) }
 |	{relative}	prefix relative time? { -> New entry.relative(relative.relative, time.time) }
+|	{repeating} T.every [count]:T.number T.dot relative time? {-> New entry.repeating(count, relative.relative, time.time) }
 ;
 
 prefix =
@@ -98,6 +102,7 @@ relative {-> relative} =
 	{workingday} workingday	{-> workingday.relative}
 |	{weekendday} weekendday	{-> weekendday.relative}
 |	{weekend} 	weekend		{-> New relative.weekend(weekend)}
+|	{week}		week		{-> New relative.week(week)}
 |	{month}		month		{-> New relative.month(month)}
 |	{year}		year		{-> New relative.year(year)}
 ;
@@ -121,6 +126,7 @@ entry =
 	{next}	relative time?
 |	{relative}	relative time?
 |	{date}		date time?
+|	{repeating}	T.number relative time?
 ;
 
 relative =
@@ -132,6 +138,7 @@ relative =
 |	{saturday}	saturday
 |	{sunday}	sunday
 |	{weekend} 	weekend
+|	{week}		week
 |	{month}		month
 |	{year}		year
 ;

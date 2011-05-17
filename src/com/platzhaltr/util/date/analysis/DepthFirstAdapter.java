@@ -111,6 +111,35 @@ public class DepthFirstAdapter extends AnalysisAdapter
         outADateEntry(node);
     }
 
+    public void inARepeatingEntry(ARepeatingEntry node)
+    {
+        defaultIn(node);
+    }
+
+    public void outARepeatingEntry(ARepeatingEntry node)
+    {
+        defaultOut(node);
+    }
+
+    @Override
+    public void caseARepeatingEntry(ARepeatingEntry node)
+    {
+        inARepeatingEntry(node);
+        if(node.getNumber() != null)
+        {
+            node.getNumber().apply(this);
+        }
+        if(node.getRelative() != null)
+        {
+            node.getRelative().apply(this);
+        }
+        if(node.getTime() != null)
+        {
+            node.getTime().apply(this);
+        }
+        outARepeatingEntry(node);
+    }
+
     public void inAMondayRelative(AMondayRelative node)
     {
         defaultIn(node);
@@ -277,6 +306,27 @@ public class DepthFirstAdapter extends AnalysisAdapter
             node.getWeekend().apply(this);
         }
         outAWeekendRelative(node);
+    }
+
+    public void inAWeekRelative(AWeekRelative node)
+    {
+        defaultIn(node);
+    }
+
+    public void outAWeekRelative(AWeekRelative node)
+    {
+        defaultOut(node);
+    }
+
+    @Override
+    public void caseAWeekRelative(AWeekRelative node)
+    {
+        inAWeekRelative(node);
+        if(node.getWeek() != null)
+        {
+            node.getWeek().apply(this);
+        }
+        outAWeekRelative(node);
     }
 
     public void inAMonthRelative(AMonthRelative node)
