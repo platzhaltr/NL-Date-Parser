@@ -151,7 +151,7 @@ public class DateGrammarTest {
 
 	@Test
 	public void testEveryWorkdayEvening() throws ParserException, LexerException, IOException {
-		parse( "Jeden Montag Abend" );
+		parse( "Jeden Dienstag Abend" );
 	}
 
 	@Test
