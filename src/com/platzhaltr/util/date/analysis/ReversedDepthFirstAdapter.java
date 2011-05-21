@@ -696,20 +696,20 @@ public class ReversedDepthFirstAdapter extends AnalysisAdapter
         outADecemberDate(node);
     }
 
-    public void inATime(ATime node)
+    public void inAAbsoluteTime(AAbsoluteTime node)
     {
         defaultIn(node);
     }
 
-    public void outATime(ATime node)
+    public void outAAbsoluteTime(AAbsoluteTime node)
     {
         defaultOut(node);
     }
 
     @Override
-    public void caseATime(ATime node)
+    public void caseAAbsoluteTime(AAbsoluteTime node)
     {
-        inATime(node);
+        inAAbsoluteTime(node);
         if(node.getMinute() != null)
         {
             node.getMinute().apply(this);
@@ -718,6 +718,23 @@ public class ReversedDepthFirstAdapter extends AnalysisAdapter
         {
             node.getHour().apply(this);
         }
-        outATime(node);
+        outAAbsoluteTime(node);
+    }
+
+    public void inAEveningTime(AEveningTime node)
+    {
+        defaultIn(node);
+    }
+
+    public void outAEveningTime(AEveningTime node)
+    {
+        defaultOut(node);
+    }
+
+    @Override
+    public void caseAEveningTime(AEveningTime node)
+    {
+        inAEveningTime(node);
+        outAEveningTime(node);
     }
 }

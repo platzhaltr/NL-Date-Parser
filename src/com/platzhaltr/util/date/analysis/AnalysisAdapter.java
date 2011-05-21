@@ -209,7 +209,12 @@ public class AnalysisAdapter implements Analysis
         defaultCase(node);
     }
 
-    public void caseATime(ATime node)
+    public void caseAAbsoluteTime(AAbsoluteTime node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseAEveningTime(AEveningTime node)
     {
         defaultCase(node);
     }
@@ -250,6 +255,11 @@ public class AnalysisAdapter implements Analysis
     }
 
     public void caseTSunday(TSunday node)
+    {
+        defaultCase(node);
+    }
+
+    public void caseTEvening(TEvening node)
     {
         defaultCase(node);
     }

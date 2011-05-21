@@ -40,7 +40,8 @@ public interface Analysis extends Switch
     void caseAOctoberDate(AOctoberDate node);
     void caseANovemberDate(ANovemberDate node);
     void caseADecemberDate(ADecemberDate node);
-    void caseATime(ATime node);
+    void caseAAbsoluteTime(AAbsoluteTime node);
+    void caseAEveningTime(AEveningTime node);
 
     void caseTNext(TNext node);
     void caseTMonday(TMonday node);
@@ -50,6 +51,7 @@ public interface Analysis extends Switch
     void caseTFriday(TFriday node);
     void caseTSaturday(TSaturday node);
     void caseTSunday(TSunday node);
+    void caseTEvening(TEvening node);
     void caseTWeekend(TWeekend node);
     void caseTWeek(TWeek node);
     void caseTMonth(TMonth node);

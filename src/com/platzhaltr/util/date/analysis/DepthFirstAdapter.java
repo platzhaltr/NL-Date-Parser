@@ -683,20 +683,20 @@ public class DepthFirstAdapter extends AnalysisAdapter
         outADecemberDate(node);
     }
 
-    public void inATime(ATime node)
+    public void inAAbsoluteTime(AAbsoluteTime node)
     {
         defaultIn(node);
     }
 
-    public void outATime(ATime node)
+    public void outAAbsoluteTime(AAbsoluteTime node)
     {
         defaultOut(node);
     }
 
     @Override
-    public void caseATime(ATime node)
+    public void caseAAbsoluteTime(AAbsoluteTime node)
     {
-        inATime(node);
+        inAAbsoluteTime(node);
         if(node.getHour() != null)
         {
             node.getHour().apply(this);
@@ -705,6 +705,23 @@ public class DepthFirstAdapter extends AnalysisAdapter
         {
             node.getMinute().apply(this);
         }
-        outATime(node);
+        outAAbsoluteTime(node);
+    }
+
+    public void inAEveningTime(AEveningTime node)
+    {
+        defaultIn(node);
+    }
+
+    public void outAEveningTime(AEveningTime node)
+    {
+        defaultOut(node);
+    }
+
+    @Override
+    public void caseAEveningTime(AEveningTime node)
+    {
+        inAEveningTime(node);
+        outAEveningTime(node);
     }
 }

@@ -1,34 +1,36 @@
 Package com.platzhaltr.util.date;
 
 Helpers
-	january = ( 'Januar' | 'januar' | 'jan' );
-	february = ( 'Februar' | 'februar' | 'feb');
+	january = ( 'Januar' | 'januar' | 'Jan' | 'jan' );
+	february = ( 'Februar' | 'februar' | 'Feb' | 'feb');
 	march = ( 'März' | 'märz' );
 	april = ( 'April' | 'april' );
 	may = ( 'Mai' | 'mai' );
 	june = ( 'Juni' | 'juni' );
 	july = ( 'Juli' | 'juli' );
-	august = ( 'August' | 'august' | 'aug' );
-	september = ( 'September' | 'september' | 'sep' );
-	october = ( 'Oktober' | 'oktober' | 'okt' );
-	november = ( 'November' | 'november' | 'nov' );
-	december = ( 'Dezember' | 'dezember' | 'dez' );
+	august = ( 'August' | 'august' | 'Aug' | 'aug' );
+	september = ( 'September' | 'september' | 'Sep' | 'sep' );
+	october = ( 'Oktober' | 'oktober' | 'Okt' | 'okt' );
+	november = ( 'November' | 'november' | 'Nov' | 'nov' );
+	december = ( 'Dezember' | 'dezember' | 'Dez' | 'dez' );
 
 Tokens 
 	next = ( 'Nächste' | 'Nächsten' | 'Nächstes' | 'nächste' | 'nächsten' | 'nächstes' );
 	
-	monday = ( 'Montag' | 'montag' | 'mo' );
-	thuesday = ( 'Dienstag' | 'dienstag' | 'di' );
-	wednesday = ( 'Mittwoch' | 'mittwoch' | 'mi' );
-	tuersday = ( 'Donnerstag' | 'donnerstag' | 'do' );
-	friday = ( 'Freitag' | 'freitag' | 'fr' );
-	saturday = ( 'Samstag' | 'samstag' | 'sa' );
-	sunday = ( 'Sonntag' | 'sonntag' | 'so' );
+	monday = ( 'Montag' | 'montag' | 'Mo' | 'mo' );
+	thuesday = ( 'Dienstag' | 'dienstag' | 'Di' | 'di' );
+	wednesday = ( 'Mittwoch' | 'mittwoch' | 'Mi' | 'mi' );
+	tuersday = ( 'Donnerstag' | 'donnerstag' | 'Do' | 'do' );
+	friday = ( 'Freitag' | 'freitag' | 'Fr' | 'fr' );
+	saturday = ( 'Samstag' | 'samstag' | 'Sa' | 'sa' );
+	sunday = ( 'Sonntag' | 'sonntag' | 'So' | 'so' );
+	
+	evening = ( 'Abend' | 'abend' | 'Abends' | 'abends' );
 	
 	weekend = ( 'Wochenende' | 'wochenende' | 'WE' | 'we' | 'We' );
 	week = ( 'Woche' | 'woche' );
-	month = ( 'Monat' );
-	year = ( 'Jahr' );
+	month = ( 'Monat' | 'monat' );
+	year = ( 'Jahr' | 'jahr' );
 	
 	every = ( 'Jeder' | 'jeder' | 'Jeden' | 'jeden' | 'Jedes' | 'jedes' );
 	
@@ -65,7 +67,7 @@ Productions
 entry {-> entry} =
 	{absolute}	on absolute time?  { -> New entry.date(absolute.date, time.time) }
 |	{relative}	prefix relative time? { -> New entry.relative(relative.relative, time.time) }
-|	{repeating} T.every [count]:T.number T.dot relative time? {-> New entry.repeating(count, relative.relative, time.time) }
+|	{repeating} T.every [count]:P.number? relative time? {-> New entry.repeating(count.number, relative.relative, time.time) }
 ;
 
 prefix =
@@ -75,27 +77,27 @@ prefix =
 
 absolute {-> date} =
 	{latin}		[date]:date {-> New date.latin([date.number]) }
-|	{january}	[date]:T.number T.dot T.january [year]:T.number? {-> New date.january([date, year]) }
-|	{february}	[date]:T.number T.dot T.february [year]:T.number? {-> New date.february([date, year]) }
-|	{march}		[date]:T.number T.dot T.march [year]:T.number? {-> New date.march([date, year]) }
-|	{april}		[date]:T.number T.dot T.april [year]:T.number? {-> New date.april([date, year]) }
-|	{may}		[date]:T.number T.dot T.may [year]:T.number? {-> New date.may([date, year]) }
-|	{june}		[date]:T.number T.dot T.june [year]:T.number? {-> New date.june([date, year]) }
-|	{july}		[date]:T.number T.dot T.july [year]:T.number? {-> New date.july([date, year]) }
-|	{august}	[date]:T.number T.dot T.august [year]:T.number? {-> New date.august([date, year]) }
-|	{september}	[date]:T.number T.dot T.september [year]:T.number? {-> New date.september([date, year]) }
-|	{october}	[date]:T.number T.dot T.october [year]:T.number? {-> New date.october([date, year]) }
-|	{november}	[date]:T.number T.dot T.november [year]:T.number? {-> New date.november([date, year]) }
-|	{december}	[date]:T.number T.dot T.december [year]:T.number? {-> New date.december([date, year]) }
+|	{january}	[date]:P.number T.january [year]:T.number? {-> New date.january([date.number, year]) }
+|	{february}	[date]:P.number T.february [year]:T.number? {-> New date.february([date.number, year]) }
+|	{march}		[date]:P.number T.dot T.march [year]:T.number? {-> New date.march([date.number, year]) }
+|	{april}		[date]:P.number T.april [year]:T.number? {-> New date.april([date.number, year]) }
+|	{may}		[date]:P.number T.may [year]:T.number? {-> New date.may([date.number, year]) }
+|	{june}		[date]:P.number T.june [year]:T.number? {-> New date.june([date.number, year]) }
+|	{july}		[date]:P.number T.july [year]:T.number? {-> New date.july([date.number, year]) }
+|	{august}	[date]:P.number T.august [year]:T.number? {-> New date.august([date.number, year]) }
+|	{september}	[date]:P.number T.september [year]:T.number? {-> New date.september([date.number, year]) }
+|	{october}	[date]:P.number T.october [year]:T.number? {-> New date.october([date.number, year]) }
+|	{november}	[date]:P.number T.november [year]:T.number? {-> New date.november([date.number, year]) }
+|	{december}	[date]:P.number T.december [year]:T.number? {-> New date.december([date.number, year]) }
 ;
 
 time {-> time} =
-	at [hour]:T.number T.colon? [minute]:T.number? oclock {-> New time(hour, minute) }
+	{absolute}	at [hour]:T.number T.colon? [minute]:T.number? oclock {-> New time.absolute(hour, minute) }
+|	{evening}	T.evening {-> New time.evening() }
 ;
 
 date {-> T.number*} =
-	{single}	[day]:T.number T.dot {-> [day] }
-|	{next} 		[date]:date [day]:T.number T.dot {-> [date.number, day] }
+	{single}	[day]:T.number [dot1]:T.dot [month]:T.number [dot2]:T.dot [year]:T.number? {-> [day, month, year] }
 ;
 
 relative {-> relative} =
@@ -120,13 +122,17 @@ weekendday { -> relative } =
 |	{sunday}	sunday		{-> New relative.sunday(sunday) }
 ;
 
+number { -> number } =
+	T.number T.dot	{-> number }
+;
+
 Abstract Syntax Tree
 
 entry =
 	{next}	relative time?
 |	{relative}	relative time?
 |	{date}		date time?
-|	{repeating}	T.number relative time?
+|	{repeating}	T.number? relative time?
 ;
 
 relative =
@@ -160,5 +166,7 @@ date =
 ;
 
 time = 
-	[hour]:T.number [minute]:T.number?
+	{absolute}	[hour]:T.number [minute]:T.number?
+|	{evening}
+// TODO extend
 ; 	
