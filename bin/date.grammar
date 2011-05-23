@@ -55,7 +55,7 @@ Tokens
 	oclock = ( 'Uhr' | 'uhr' );
 	
 	blank = (' ' | 13 | 10)+;
-	word = [['a'..'z'] + ['A'..'Z']]+;
+	subject = [['a'..'z'] + ['A'..'Z']]+;
 	number = ['0' .. '9']+;
 
 Ignored Tokens 
@@ -65,7 +65,7 @@ Ignored Tokens
 Productions
 
 entry {-> entry} =
-	{absolute}	on absolute time?  { -> New entry.date(absolute.date, time.time) }
+	{absolute}	on absolute time? { -> New entry.date(absolute.date, time.time) }
 |	{relative}	prefix relative time? { -> New entry.relative(relative.relative, time.time) }
 |	{repeating} T.every [count]:P.number? relative time? {-> New entry.repeating(count.number, relative.relative, time.time) }
 ;
@@ -103,23 +103,23 @@ date {-> T.number*} =
 relative {-> relative} =
 	{workingday} workingday	{-> workingday.relative}
 |	{weekendday} weekendday	{-> weekendday.relative}
-|	{weekend} 	weekend		{-> New relative.weekend(weekend)}
-|	{week}		week		{-> New relative.week(week)}
-|	{month}		month		{-> New relative.month(month)}
-|	{year}		year		{-> New relative.year(year)}
+|	{weekend} 	weekend		{-> New relative.weekend()}
+|	{week}		week		{-> New relative.week()}
+|	{month}		month		{-> New relative.month()}
+|	{year}		year		{-> New relative.year()}
 ;
 
 workingday { -> relative } =
-	{monday} 	monday		{-> New relative.monday(monday) }
-|	{thuesday}	thuesday	{-> New relative.thuesday(thuesday) }
-|	{wednesday}	wednesday	{-> New relative.wednesday(wednesday) }
-|	{tuersday}	tuersday	{-> New relative.tuersday(tuersday) }
-|	{friday}	friday		{-> New relative.friday(friday) }
+	{monday} 	monday		{-> New relative.monday() }
+|	{thuesday}	thuesday	{-> New relative.thuesday() }
+|	{wednesday}	wednesday	{-> New relative.wednesday() }
+|	{tuersday}	tuersday	{-> New relative.tuersday() }
+|	{friday}	friday		{-> New relative.friday() }
 ;
 
 weekendday { -> relative } =
-	{saturday}	saturday	{-> New relative.saturday(saturday) }
-|	{sunday}	sunday		{-> New relative.sunday(sunday) }
+	{saturday}	saturday	{-> New relative.saturday() }
+|	{sunday}	sunday		{-> New relative.sunday() }
 ;
 
 number { -> number } =
@@ -136,17 +136,17 @@ entry =
 ;
 
 relative =
-	{monday}	monday
-|	{thuesday}	thuesday
-|	{wednesday}	wednesday
-|	{tuersday}	tuersday
-|	{friday}	friday
-|	{saturday}	saturday
-|	{sunday}	sunday
-|	{weekend} 	weekend
-|	{week}		week
-|	{month}		month
-|	{year}		year
+	{monday}	
+|	{thuesday}	
+|	{wednesday}	
+|	{tuersday}	
+|	{friday}	
+|	{saturday}	
+|	{sunday}	
+|	{weekend} 	
+|	{week}		
+|	{month}		
+|	{year}		
 ;
 
 date =
