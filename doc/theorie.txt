@@ -83,11 +83,22 @@ Allgemein/Ideen
  -- "@rule jeden Tag etwas tun"
  -- "@rule jeden 2. Mittwoch"
  -- ...
- 
+
+- Einträge ohne Zeitangabe ( weder absolute noch relativ ) gelten als ToDo!
+ -- Klaus treffen
+ -- Einkaufen
+ -- ...
+
+- Termine/ToDos Kontexten zuweisen
+
 - Importieren von
  -- festen Daten von Service (Internet)
  -- Feiertage
  -- Bundesliga termine
  -- etc.
 
-
+- Erinnerungen einbauen
+ -- Zweite zeile im UI
+ -- Eigene Syntax? 
+  --- @remindMe @method email @to ...
+  --- default werte in Einstellungen
