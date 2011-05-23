@@ -7,26 +7,16 @@ import com.platzhaltr.util.date.analysis.*;
 @SuppressWarnings("nls")
 public final class AMonthRelative extends PRelative
 {
-    private TMonth _month_;
 
     public AMonthRelative()
     {
         // Constructor
     }
 
-    public AMonthRelative(
-        @SuppressWarnings("hiding") TMonth _month_)
-    {
-        // Constructor
-        setMonth(_month_);
-
-    }
-
     @Override
     public Object clone()
     {
-        return new AMonthRelative(
-            cloneNode(this._month_));
+        return new AMonthRelative();
     }
 
     public void apply(Switch sw)
@@ -34,48 +24,16 @@ public final class AMonthRelative extends PRelative
         ((Analysis) sw).caseAMonthRelative(this);
     }
 
-    public TMonth getMonth()
-    {
-        return this._month_;
-    }
-
-    public void setMonth(TMonth node)
-    {
-        if(this._month_ != null)
-        {
-            this._month_.parent(null);
-        }
-
-        if(node != null)
-        {
-            if(node.parent() != null)
-            {
-                node.parent().removeChild(node);
-            }
-
-            node.parent(this);
-        }
-
-        this._month_ = node;
-    }
-
     @Override
     public String toString()
     {
-        return ""
-            + toString(this._month_);
+        return "";
     }
 
     @Override
     void removeChild(@SuppressWarnings("unused") Node child)
     {
         // Remove child
-        if(this._month_ == child)
-        {
-            this._month_ = null;
-            return;
-        }
-
         throw new RuntimeException("Not a child.");
     }
 
@@ -83,12 +41,6 @@ public final class AMonthRelative extends PRelative
     void replaceChild(@SuppressWarnings("unused") Node oldChild, @SuppressWarnings("unused") Node newChild)
     {
         // Replace child
-        if(this._month_ == oldChild)
-        {
-            setMonth((TMonth) newChild);
-            return;
-        }
-
         throw new RuntimeException("Not a child.");
     }
 }

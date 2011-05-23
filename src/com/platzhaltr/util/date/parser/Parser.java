@@ -1767,10 +1767,8 @@ public class Parser
         PRelative prelativeNode1;
         {
             // Block
-        TWeekend tweekendNode2;
-        tweekendNode2 = (TWeekend)nodeArrayList1.get(0);
 
-        prelativeNode1 = new AWeekendRelative(tweekendNode2);
+        prelativeNode1 = new AWeekendRelative();
         }
 	nodeList.add(prelativeNode1);
         return nodeList;
@@ -1787,10 +1785,8 @@ public class Parser
         PRelative prelativeNode1;
         {
             // Block
-        TWeek tweekNode2;
-        tweekNode2 = (TWeek)nodeArrayList1.get(0);
 
-        prelativeNode1 = new AWeekRelative(tweekNode2);
+        prelativeNode1 = new AWeekRelative();
         }
 	nodeList.add(prelativeNode1);
         return nodeList;
@@ -1807,10 +1803,8 @@ public class Parser
         PRelative prelativeNode1;
         {
             // Block
-        TMonth tmonthNode2;
-        tmonthNode2 = (TMonth)nodeArrayList1.get(0);
 
-        prelativeNode1 = new AMonthRelative(tmonthNode2);
+        prelativeNode1 = new AMonthRelative();
         }
 	nodeList.add(prelativeNode1);
         return nodeList;
@@ -1827,10 +1821,8 @@ public class Parser
         PRelative prelativeNode1;
         {
             // Block
-        TYear tyearNode2;
-        tyearNode2 = (TYear)nodeArrayList1.get(0);
 
-        prelativeNode1 = new AYearRelative(tyearNode2);
+        prelativeNode1 = new AYearRelative();
         }
 	nodeList.add(prelativeNode1);
         return nodeList;
@@ -1847,10 +1839,8 @@ public class Parser
         PRelative prelativeNode1;
         {
             // Block
-        TMonday tmondayNode2;
-        tmondayNode2 = (TMonday)nodeArrayList1.get(0);
 
-        prelativeNode1 = new AMondayRelative(tmondayNode2);
+        prelativeNode1 = new AMondayRelative();
         }
 	nodeList.add(prelativeNode1);
         return nodeList;
@@ -1867,10 +1857,8 @@ public class Parser
         PRelative prelativeNode1;
         {
             // Block
-        TThuesday tthuesdayNode2;
-        tthuesdayNode2 = (TThuesday)nodeArrayList1.get(0);
 
-        prelativeNode1 = new AThuesdayRelative(tthuesdayNode2);
+        prelativeNode1 = new AThuesdayRelative();
         }
 	nodeList.add(prelativeNode1);
         return nodeList;
@@ -1887,10 +1875,8 @@ public class Parser
         PRelative prelativeNode1;
         {
             // Block
-        TWednesday twednesdayNode2;
-        twednesdayNode2 = (TWednesday)nodeArrayList1.get(0);
 
-        prelativeNode1 = new AWednesdayRelative(twednesdayNode2);
+        prelativeNode1 = new AWednesdayRelative();
         }
 	nodeList.add(prelativeNode1);
         return nodeList;
@@ -1907,10 +1893,8 @@ public class Parser
         PRelative prelativeNode1;
         {
             // Block
-        TTuersday ttuersdayNode2;
-        ttuersdayNode2 = (TTuersday)nodeArrayList1.get(0);
 
-        prelativeNode1 = new ATuersdayRelative(ttuersdayNode2);
+        prelativeNode1 = new ATuersdayRelative();
         }
 	nodeList.add(prelativeNode1);
         return nodeList;
@@ -1927,10 +1911,8 @@ public class Parser
         PRelative prelativeNode1;
         {
             // Block
-        TFriday tfridayNode2;
-        tfridayNode2 = (TFriday)nodeArrayList1.get(0);
 
-        prelativeNode1 = new AFridayRelative(tfridayNode2);
+        prelativeNode1 = new AFridayRelative();
         }
 	nodeList.add(prelativeNode1);
         return nodeList;
@@ -1947,10 +1929,8 @@ public class Parser
         PRelative prelativeNode1;
         {
             // Block
-        TSaturday tsaturdayNode2;
-        tsaturdayNode2 = (TSaturday)nodeArrayList1.get(0);
 
-        prelativeNode1 = new ASaturdayRelative(tsaturdayNode2);
+        prelativeNode1 = new ASaturdayRelative();
         }
 	nodeList.add(prelativeNode1);
         return nodeList;
@@ -1967,10 +1947,8 @@ public class Parser
         PRelative prelativeNode1;
         {
             // Block
-        TSunday tsundayNode2;
-        tsundayNode2 = (TSunday)nodeArrayList1.get(0);
 
-        prelativeNode1 = new ASundayRelative(tsundayNode2);
+        prelativeNode1 = new ASundayRelative();
         }
 	nodeList.add(prelativeNode1);
         return nodeList;

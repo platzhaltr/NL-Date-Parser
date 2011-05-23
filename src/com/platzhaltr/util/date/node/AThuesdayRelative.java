@@ -7,26 +7,16 @@ import com.platzhaltr.util.date.analysis.*;
 @SuppressWarnings("nls")
 public final class AThuesdayRelative extends PRelative
 {
-    private TThuesday _thuesday_;
 
     public AThuesdayRelative()
     {
         // Constructor
     }
 
-    public AThuesdayRelative(
-        @SuppressWarnings("hiding") TThuesday _thuesday_)
-    {
-        // Constructor
-        setThuesday(_thuesday_);
-
-    }
-
     @Override
     public Object clone()
     {
-        return new AThuesdayRelative(
-            cloneNode(this._thuesday_));
+        return new AThuesdayRelative();
     }
 
     public void apply(Switch sw)
@@ -34,48 +24,16 @@ public final class AThuesdayRelative extends PRelative
         ((Analysis) sw).caseAThuesdayRelative(this);
     }
 
-    public TThuesday getThuesday()
-    {
-        return this._thuesday_;
-    }
-
-    public void setThuesday(TThuesday node)
-    {
-        if(this._thuesday_ != null)
-        {
-            this._thuesday_.parent(null);
-        }
-
-        if(node != null)
-        {
-            if(node.parent() != null)
-            {
-                node.parent().removeChild(node);
-            }
-
-            node.parent(this);
-        }
-
-        this._thuesday_ = node;
-    }
-
     @Override
     public String toString()
     {
-        return ""
-            + toString(this._thuesday_);
+        return "";
     }
 
     @Override
     void removeChild(@SuppressWarnings("unused") Node child)
     {
         // Remove child
-        if(this._thuesday_ == child)
-        {
-            this._thuesday_ = null;
-            return;
-        }
-
         throw new RuntimeException("Not a child.");
     }
 
@@ -83,12 +41,6 @@ public final class AThuesdayRelative extends PRelative
     void replaceChild(@SuppressWarnings("unused") Node oldChild, @SuppressWarnings("unused") Node newChild)
     {
         // Replace child
-        if(this._thuesday_ == oldChild)
-        {
-            setThuesday((TThuesday) newChild);
-            return;
-        }
-
         throw new RuntimeException("Not a child.");
     }
 }

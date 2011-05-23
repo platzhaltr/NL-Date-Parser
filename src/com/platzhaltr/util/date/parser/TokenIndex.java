@@ -202,7 +202,7 @@ class TokenIndex extends AnalysisAdapter
     }
 
     @Override
-    public void caseTWord(@SuppressWarnings("unused") TWord node)
+    public void caseTSubject(@SuppressWarnings("unused") TSubject node)
     {
         this.index = 32;
     }

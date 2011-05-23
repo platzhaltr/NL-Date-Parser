@@ -7,26 +7,16 @@ import com.platzhaltr.util.date.analysis.*;
 @SuppressWarnings("nls")
 public final class ASundayRelative extends PRelative
 {
-    private TSunday _sunday_;
 
     public ASundayRelative()
     {
         // Constructor
     }
 
-    public ASundayRelative(
-        @SuppressWarnings("hiding") TSunday _sunday_)
-    {
-        // Constructor
-        setSunday(_sunday_);
-
-    }
-
     @Override
     public Object clone()
     {
-        return new ASundayRelative(
-            cloneNode(this._sunday_));
+        return new ASundayRelative();
     }
 
     public void apply(Switch sw)
@@ -34,48 +24,16 @@ public final class ASundayRelative extends PRelative
         ((Analysis) sw).caseASundayRelative(this);
     }
 
-    public TSunday getSunday()
-    {
-        return this._sunday_;
-    }
-
-    public void setSunday(TSunday node)
-    {
-        if(this._sunday_ != null)
-        {
-            this._sunday_.parent(null);
-        }
-
-        if(node != null)
-        {
-            if(node.parent() != null)
-            {
-                node.parent().removeChild(node);
-            }
-
-            node.parent(this);
-        }
-
-        this._sunday_ = node;
-    }
-
     @Override
     public String toString()
     {
-        return ""
-            + toString(this._sunday_);
+        return "";
     }
 
     @Override
     void removeChild(@SuppressWarnings("unused") Node child)
     {
         // Remove child
-        if(this._sunday_ == child)
-        {
-            this._sunday_ = null;
-            return;
-        }
-
         throw new RuntimeException("Not a child.");
     }
 
@@ -83,12 +41,6 @@ public final class ASundayRelative extends PRelative
     void replaceChild(@SuppressWarnings("unused") Node oldChild, @SuppressWarnings("unused") Node newChild)
     {
         // Replace child
-        if(this._sunday_ == oldChild)
-        {
-            setSunday((TSunday) newChild);
-            return;
-        }
-
         throw new RuntimeException("Not a child.");
     }
 }

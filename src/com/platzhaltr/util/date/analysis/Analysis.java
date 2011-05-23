@@ -76,7 +76,7 @@ public interface Analysis extends Switch
     void caseTAt(TAt node);
     void caseTOclock(TOclock node);
     void caseTBlank(TBlank node);
-    void caseTWord(TWord node);
+    void caseTSubject(TSubject node);
     void caseTNumber(TNumber node);
     void caseEOF(EOF node);
 }

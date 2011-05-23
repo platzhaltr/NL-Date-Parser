@@ -7,26 +7,16 @@ import com.platzhaltr.util.date.analysis.*;
 @SuppressWarnings("nls")
 public final class AWeekendRelative extends PRelative
 {
-    private TWeekend _weekend_;
 
     public AWeekendRelative()
     {
         // Constructor
     }
 
-    public AWeekendRelative(
-        @SuppressWarnings("hiding") TWeekend _weekend_)
-    {
-        // Constructor
-        setWeekend(_weekend_);
-
-    }
-
     @Override
     public Object clone()
     {
-        return new AWeekendRelative(
-            cloneNode(this._weekend_));
+        return new AWeekendRelative();
     }
 
     public void apply(Switch sw)
@@ -34,48 +24,16 @@ public final class AWeekendRelative extends PRelative
         ((Analysis) sw).caseAWeekendRelative(this);
     }
 
-    public TWeekend getWeekend()
-    {
-        return this._weekend_;
-    }
-
-    public void setWeekend(TWeekend node)
-    {
-        if(this._weekend_ != null)
-        {
-            this._weekend_.parent(null);
-        }
-
-        if(node != null)
-        {
-            if(node.parent() != null)
-            {
-                node.parent().removeChild(node);
-            }
-
-            node.parent(this);
-        }
-
-        this._weekend_ = node;
-    }
-
     @Override
     public String toString()
     {
-        return ""
-            + toString(this._weekend_);
+        return "";
     }
 
     @Override
     void removeChild(@SuppressWarnings("unused") Node child)
     {
         // Remove child
-        if(this._weekend_ == child)
-        {
-            this._weekend_ = null;
-            return;
-        }
-
         throw new RuntimeException("Not a child.");
     }
 
@@ -83,12 +41,6 @@ public final class AWeekendRelative extends PRelative
     void replaceChild(@SuppressWarnings("unused") Node oldChild, @SuppressWarnings("unused") Node newChild)
     {
         // Replace child
-        if(this._weekend_ == oldChild)
-        {
-            setWeekend((TWeekend) newChild);
-            return;
-        }
-
         throw new RuntimeException("Not a child.");
     }
 }

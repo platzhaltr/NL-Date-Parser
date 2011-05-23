@@ -7,26 +7,16 @@ import com.platzhaltr.util.date.analysis.*;
 @SuppressWarnings("nls")
 public final class AYearRelative extends PRelative
 {
-    private TYear _year_;
 
     public AYearRelative()
     {
         // Constructor
     }
 
-    public AYearRelative(
-        @SuppressWarnings("hiding") TYear _year_)
-    {
-        // Constructor
-        setYear(_year_);
-
-    }
-
     @Override
     public Object clone()
     {
-        return new AYearRelative(
-            cloneNode(this._year_));
+        return new AYearRelative();
     }
 
     public void apply(Switch sw)
@@ -34,48 +24,16 @@ public final class AYearRelative extends PRelative
         ((Analysis) sw).caseAYearRelative(this);
     }
 
-    public TYear getYear()
-    {
-        return this._year_;
-    }
-
-    public void setYear(TYear node)
-    {
-        if(this._year_ != null)
-        {
-            this._year_.parent(null);
-        }
-
-        if(node != null)
-        {
-            if(node.parent() != null)
-            {
-                node.parent().removeChild(node);
-            }
-
-            node.parent(this);
-        }
-
-        this._year_ = node;
-    }
-
     @Override
     public String toString()
     {
-        return ""
-            + toString(this._year_);
+        return "";
     }
 
     @Override
     void removeChild(@SuppressWarnings("unused") Node child)
     {
         // Remove child
-        if(this._year_ == child)
-        {
-            this._year_ = null;
-            return;
-        }
-
         throw new RuntimeException("Not a child.");
     }
 
@@ -83,12 +41,6 @@ public final class AYearRelative extends PRelative
     void replaceChild(@SuppressWarnings("unused") Node oldChild, @SuppressWarnings("unused") Node newChild)
     {
         // Replace child
-        if(this._year_ == oldChild)
-        {
-            setYear((TYear) newChild);
-            return;
-        }
-
         throw new RuntimeException("Not a child.");
     }
 }

@@ -154,10 +154,6 @@ public class ReversedDepthFirstAdapter extends AnalysisAdapter
     public void caseAMondayRelative(AMondayRelative node)
     {
         inAMondayRelative(node);
-        if(node.getMonday() != null)
-        {
-            node.getMonday().apply(this);
-        }
         outAMondayRelative(node);
     }
 
@@ -175,10 +171,6 @@ public class ReversedDepthFirstAdapter extends AnalysisAdapter
     public void caseAThuesdayRelative(AThuesdayRelative node)
     {
         inAThuesdayRelative(node);
-        if(node.getThuesday() != null)
-        {
-            node.getThuesday().apply(this);
-        }
         outAThuesdayRelative(node);
     }
 
@@ -196,10 +188,6 @@ public class ReversedDepthFirstAdapter extends AnalysisAdapter
     public void caseAWednesdayRelative(AWednesdayRelative node)
     {
         inAWednesdayRelative(node);
-        if(node.getWednesday() != null)
-        {
-            node.getWednesday().apply(this);
-        }
         outAWednesdayRelative(node);
     }
 
@@ -217,10 +205,6 @@ public class ReversedDepthFirstAdapter extends AnalysisAdapter
     public void caseATuersdayRelative(ATuersdayRelative node)
     {
         inATuersdayRelative(node);
-        if(node.getTuersday() != null)
-        {
-            node.getTuersday().apply(this);
-        }
         outATuersdayRelative(node);
     }
 
@@ -238,10 +222,6 @@ public class ReversedDepthFirstAdapter extends AnalysisAdapter
     public void caseAFridayRelative(AFridayRelative node)
     {
         inAFridayRelative(node);
-        if(node.getFriday() != null)
-        {
-            node.getFriday().apply(this);
-        }
         outAFridayRelative(node);
     }
 
@@ -259,10 +239,6 @@ public class ReversedDepthFirstAdapter extends AnalysisAdapter
     public void caseASaturdayRelative(ASaturdayRelative node)
     {
         inASaturdayRelative(node);
-        if(node.getSaturday() != null)
-        {
-            node.getSaturday().apply(this);
-        }
         outASaturdayRelative(node);
     }
 
@@ -280,10 +256,6 @@ public class ReversedDepthFirstAdapter extends AnalysisAdapter
     public void caseASundayRelative(ASundayRelative node)
     {
         inASundayRelative(node);
-        if(node.getSunday() != null)
-        {
-            node.getSunday().apply(this);
-        }
         outASundayRelative(node);
     }
 
@@ -301,10 +273,6 @@ public class ReversedDepthFirstAdapter extends AnalysisAdapter
     public void caseAWeekendRelative(AWeekendRelative node)
     {
         inAWeekendRelative(node);
-        if(node.getWeekend() != null)
-        {
-            node.getWeekend().apply(this);
-        }
         outAWeekendRelative(node);
     }
 
@@ -322,10 +290,6 @@ public class ReversedDepthFirstAdapter extends AnalysisAdapter
     public void caseAWeekRelative(AWeekRelative node)
     {
         inAWeekRelative(node);
-        if(node.getWeek() != null)
-        {
-            node.getWeek().apply(this);
-        }
         outAWeekRelative(node);
     }
 
@@ -343,10 +307,6 @@ public class ReversedDepthFirstAdapter extends AnalysisAdapter
     public void caseAMonthRelative(AMonthRelative node)
     {
         inAMonthRelative(node);
-        if(node.getMonth() != null)
-        {
-            node.getMonth().apply(this);
-        }
         outAMonthRelative(node);
     }
 
@@ -364,10 +324,6 @@ public class ReversedDepthFirstAdapter extends AnalysisAdapter
     public void caseAYearRelative(AYearRelative node)
     {
         inAYearRelative(node);
-        if(node.getYear() != null)
-        {
-            node.getYear().apply(this);
-        }
         outAYearRelative(node);
     }
 

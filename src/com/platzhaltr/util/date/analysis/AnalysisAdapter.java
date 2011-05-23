@@ -384,7 +384,7 @@ public class AnalysisAdapter implements Analysis
         defaultCase(node);
     }
 
-    public void caseTWord(TWord node)
+    public void caseTSubject(TSubject node)
     {
         defaultCase(node);
     }
