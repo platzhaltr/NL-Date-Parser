@@ -5,10 +5,10 @@ package com.platzhaltr.util.date.node;
 import com.platzhaltr.util.date.analysis.*;
 
 @SuppressWarnings("nls")
-public final class ATuersdayRelative extends PRelative
+public final class AThursdayRelative extends PRelative
 {
 
-    public ATuersdayRelative()
+    public AThursdayRelative()
     {
         // Constructor
     }
@@ -16,12 +16,12 @@ public final class ATuersdayRelative extends PRelative
     @Override
     public Object clone()
     {
-        return new ATuersdayRelative();
+        return new AThursdayRelative();
     }
 
     public void apply(Switch sw)
     {
-        ((Analysis) sw).caseATuersdayRelative(this);
+        ((Analysis) sw).caseAThursdayRelative(this);
     }
 
     @Override

@@ -460,7 +460,7 @@ public class Parser
 			push(goTo(6), list);
 		    }
 		    break;
-                    case 49: /* reduce AThuesdayWorkingday */
+                    case 49: /* reduce ATuesdayWorkingday */
 		    {
 			ArrayList list = new49();
 			push(goTo(6), list);
@@ -472,7 +472,7 @@ public class Parser
 			push(goTo(6), list);
 		    }
 		    break;
-                    case 51: /* reduce ATuersdayWorkingday */
+                    case 51: /* reduce AThursdayWorkingday */
 		    {
 			ArrayList list = new51();
 			push(goTo(6), list);
@@ -898,7 +898,6 @@ public class Parser
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
-        @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
         @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
         @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
         PDate pdateNode1;
@@ -928,7 +927,6 @@ public class Parser
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
-        @SuppressWarnings("unused") ArrayList nodeArrayList4 = pop();
         @SuppressWarnings("unused") ArrayList nodeArrayList3 = pop();
         @SuppressWarnings("unused") ArrayList nodeArrayList2 = pop();
         @SuppressWarnings("unused") ArrayList nodeArrayList1 = pop();
@@ -941,7 +939,7 @@ public class Parser
         TNumber tnumberNode2;
         TNumber tnumberNode3;
         tnumberNode2 = (TNumber)nodeArrayList1.get(0);
-        tnumberNode3 = (TNumber)nodeArrayList4.get(0);
+        tnumberNode3 = (TNumber)nodeArrayList3.get(0);
 	if(tnumberNode2 != null)
 	{
 	  listNode4.add(tnumberNode2);
@@ -1849,7 +1847,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new49() /* reduce AThuesdayWorkingday */
+    ArrayList new49() /* reduce ATuesdayWorkingday */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1858,7 +1856,7 @@ public class Parser
         {
             // Block
 
-        prelativeNode1 = new AThuesdayRelative();
+        prelativeNode1 = new ATuesdayRelative();
         }
 	nodeList.add(prelativeNode1);
         return nodeList;
@@ -1885,7 +1883,7 @@ public class Parser
 
 
     @SuppressWarnings("unchecked")
-    ArrayList new51() /* reduce ATuersdayWorkingday */
+    ArrayList new51() /* reduce AThursdayWorkingday */
     {
         @SuppressWarnings("hiding") ArrayList nodeList = new ArrayList();
 
@@ -1894,7 +1892,7 @@ public class Parser
         {
             // Block
 
-        prelativeNode1 = new ATuersdayRelative();
+        prelativeNode1 = new AThursdayRelative();
         }
 	nodeList.add(prelativeNode1);
         return nodeList;
@@ -1998,7 +1996,7 @@ public class Parser
 			{{-1, ERROR, 22}, {26, SHIFT, 32}, },
 			{{-1, REDUCE, 0}, {8, SHIFT, 28}, {30, SHIFT, 29}, },
 			{{-1, REDUCE, 10}, },
-			{{-1, ERROR, 25}, {14, SHIFT, 34}, {15, SHIFT, 35}, {17, SHIFT, 36}, {18, SHIFT, 37}, {19, SHIFT, 38}, {20, SHIFT, 39}, {21, SHIFT, 40}, {22, SHIFT, 41}, {23, SHIFT, 42}, {24, SHIFT, 43}, {25, SHIFT, 44}, {26, SHIFT, 45}, },
+			{{-1, ERROR, 25}, {14, SHIFT, 34}, {15, SHIFT, 35}, {16, SHIFT, 36}, {17, SHIFT, 37}, {18, SHIFT, 38}, {19, SHIFT, 39}, {20, SHIFT, 40}, {21, SHIFT, 41}, {22, SHIFT, 42}, {23, SHIFT, 43}, {24, SHIFT, 44}, {25, SHIFT, 45}, },
 			{{-1, REDUCE, 2}, {8, SHIFT, 28}, {30, SHIFT, 29}, },
 			{{-1, REDUCE, 55}, },
 			{{-1, REDUCE, 39}, },
@@ -2009,22 +2007,23 @@ public class Parser
 			{{-1, REDUCE, 1}, },
 			{{-1, REDUCE, 11}, {33, SHIFT, 50}, },
 			{{-1, REDUCE, 13}, {33, SHIFT, 51}, },
-			{{-1, REDUCE, 17}, {33, SHIFT, 52}, },
-			{{-1, REDUCE, 19}, {33, SHIFT, 53}, },
-			{{-1, REDUCE, 21}, {33, SHIFT, 54}, },
-			{{-1, REDUCE, 23}, {33, SHIFT, 55}, },
-			{{-1, REDUCE, 25}, {33, SHIFT, 56}, },
-			{{-1, REDUCE, 27}, {33, SHIFT, 57}, },
-			{{-1, REDUCE, 29}, {33, SHIFT, 58}, },
-			{{-1, REDUCE, 31}, {33, SHIFT, 59}, },
-			{{-1, REDUCE, 33}, {33, SHIFT, 60}, },
-			{{-1, ERROR, 45}, {16, SHIFT, 61}, },
+			{{-1, REDUCE, 15}, {33, SHIFT, 52}, },
+			{{-1, REDUCE, 17}, {33, SHIFT, 53}, },
+			{{-1, REDUCE, 19}, {33, SHIFT, 54}, },
+			{{-1, REDUCE, 21}, {33, SHIFT, 55}, },
+			{{-1, REDUCE, 23}, {33, SHIFT, 56}, },
+			{{-1, REDUCE, 25}, {33, SHIFT, 57}, },
+			{{-1, REDUCE, 27}, {33, SHIFT, 58}, },
+			{{-1, REDUCE, 29}, {33, SHIFT, 59}, },
+			{{-1, REDUCE, 31}, {33, SHIFT, 60}, },
+			{{-1, REDUCE, 33}, {33, SHIFT, 61}, },
 			{{-1, REDUCE, 3}, },
 			{{-1, ERROR, 47}, {27, SHIFT, 62}, {31, SHIFT, 63}, {33, SHIFT, 64}, },
 			{{-1, REDUCE, 7}, },
 			{{-1, ERROR, 49}, {26, SHIFT, 65}, },
 			{{-1, REDUCE, 12}, },
 			{{-1, REDUCE, 14}, },
+			{{-1, REDUCE, 16}, },
 			{{-1, REDUCE, 18}, },
 			{{-1, REDUCE, 20}, },
 			{{-1, REDUCE, 22}, },
@@ -2034,14 +2033,12 @@ public class Parser
 			{{-1, REDUCE, 30}, },
 			{{-1, REDUCE, 32}, },
 			{{-1, REDUCE, 34}, },
-			{{-1, REDUCE, 15}, {33, SHIFT, 66}, },
-			{{-1, ERROR, 62}, {31, SHIFT, 67}, {33, SHIFT, 68}, },
+			{{-1, ERROR, 62}, {31, SHIFT, 66}, {33, SHIFT, 67}, },
 			{{-1, REDUCE, 35}, },
-			{{-1, ERROR, 64}, {31, SHIFT, 69}, },
-			{{-1, REDUCE, 40}, {33, SHIFT, 70}, },
-			{{-1, REDUCE, 16}, },
+			{{-1, ERROR, 64}, {31, SHIFT, 68}, },
+			{{-1, REDUCE, 40}, {33, SHIFT, 69}, },
 			{{-1, REDUCE, 36}, },
-			{{-1, ERROR, 68}, {31, SHIFT, 71}, },
+			{{-1, ERROR, 67}, {31, SHIFT, 70}, },
 			{{-1, REDUCE, 37}, },
 			{{-1, REDUCE, 41}, },
 			{{-1, REDUCE, 38}, },
@@ -2061,23 +2058,22 @@ public class Parser
     private static String[] errorMessages;
 /*      {
 			"expecting: next, every, on",
-			"expecting: monday, thuesday, wednesday, tuersday, friday, saturday, sunday, weekend, week, month, year",
-			"expecting: monday, thuesday, wednesday, tuersday, friday, saturday, sunday, weekend, week, month, year, number",
+			"expecting: monday, tuesday, wednesday, thursday, friday, saturday, sunday, weekend, week, month, year",
+			"expecting: monday, tuesday, wednesday, thursday, friday, saturday, sunday, weekend, week, month, year, number",
 			"expecting: EOF",
 			"expecting: evening, at, EOF",
 			"expecting: '.'",
-			"expecting: january, february, april, may, june, july, august, september, october, november, december, '.'",
+			"expecting: january, february, march, april, may, june, july, august, september, october, november, december",
 			"expecting: number",
-			"expecting: january, february, april, may, june, july, august, september, october, november, december, '.', number",
+			"expecting: january, february, march, april, may, june, july, august, september, october, november, december, number",
 			"expecting: evening, at, number, EOF",
-			"expecting: march",
 			"expecting: ':', oclock, number",
 			"expecting: oclock, number",
 			"expecting: oclock",
         };*/
     private static int[] errors;
 /*      {
-			0, 1, 2, 2, 3, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 4, 4, 4, 1, 5, 4, 4, 6, 4, 1, 3, 7, 3, 4, 8, 3, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10, 3, 11, 3, 5, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 9, 12, 3, 13, 9, 4, 3, 13, 3, 4, 3, 
+			0, 1, 2, 2, 3, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 4, 4, 4, 1, 5, 4, 4, 6, 4, 1, 3, 7, 3, 4, 8, 3, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 3, 10, 3, 5, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 11, 3, 12, 9, 3, 12, 3, 4, 3, 
         };*/
 
     static 

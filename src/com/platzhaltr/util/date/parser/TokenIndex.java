@@ -22,7 +22,7 @@ class TokenIndex extends AnalysisAdapter
     }
 
     @Override
-    public void caseTThuesday(@SuppressWarnings("unused") TThuesday node)
+    public void caseTTuesday(@SuppressWarnings("unused") TTuesday node)
     {
         this.index = 2;
     }
@@ -34,7 +34,7 @@ class TokenIndex extends AnalysisAdapter
     }
 
     @Override
-    public void caseTTuersday(@SuppressWarnings("unused") TTuersday node)
+    public void caseTThursday(@SuppressWarnings("unused") TThursday node)
     {
         this.index = 4;
     }

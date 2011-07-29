@@ -5,14 +5,14 @@ package com.platzhaltr.util.date.node;
 import com.platzhaltr.util.date.analysis.*;
 
 @SuppressWarnings("nls")
-public final class TTuersday extends Token
+public final class TThursday extends Token
 {
-    public TTuersday(String text)
+    public TThursday(String text)
     {
         setText(text);
     }
 
-    public TTuersday(String text, int line, int pos)
+    public TThursday(String text, int line, int pos)
     {
         setText(text);
         setLine(line);
@@ -22,11 +22,11 @@ public final class TTuersday extends Token
     @Override
     public Object clone()
     {
-      return new TTuersday(getText(), getLine(), getPos());
+      return new TThursday(getText(), getLine(), getPos());
     }
 
     public void apply(Switch sw)
     {
-        ((Analysis) sw).caseTTuersday(this);
+        ((Analysis) sw).caseTThursday(this);
     }
 }

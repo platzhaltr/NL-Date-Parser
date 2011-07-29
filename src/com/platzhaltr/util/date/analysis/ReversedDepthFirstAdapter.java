@@ -157,21 +157,21 @@ public class ReversedDepthFirstAdapter extends AnalysisAdapter
         outAMondayRelative(node);
     }
 
-    public void inAThuesdayRelative(AThuesdayRelative node)
+    public void inATuesdayRelative(ATuesdayRelative node)
     {
         defaultIn(node);
     }
 
-    public void outAThuesdayRelative(AThuesdayRelative node)
+    public void outATuesdayRelative(ATuesdayRelative node)
     {
         defaultOut(node);
     }
 
     @Override
-    public void caseAThuesdayRelative(AThuesdayRelative node)
+    public void caseATuesdayRelative(ATuesdayRelative node)
     {
-        inAThuesdayRelative(node);
-        outAThuesdayRelative(node);
+        inATuesdayRelative(node);
+        outATuesdayRelative(node);
     }
 
     public void inAWednesdayRelative(AWednesdayRelative node)
@@ -191,21 +191,21 @@ public class ReversedDepthFirstAdapter extends AnalysisAdapter
         outAWednesdayRelative(node);
     }
 
-    public void inATuersdayRelative(ATuersdayRelative node)
+    public void inAThursdayRelative(AThursdayRelative node)
     {
         defaultIn(node);
     }
 
-    public void outATuersdayRelative(ATuersdayRelative node)
+    public void outAThursdayRelative(AThursdayRelative node)
     {
         defaultOut(node);
     }
 
     @Override
-    public void caseATuersdayRelative(ATuersdayRelative node)
+    public void caseAThursdayRelative(AThursdayRelative node)
     {
-        inATuersdayRelative(node);
-        outATuersdayRelative(node);
+        inAThursdayRelative(node);
+        outAThursdayRelative(node);
     }
 
     public void inAFridayRelative(AFridayRelative node)

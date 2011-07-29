@@ -18,9 +18,9 @@ Tokens
 	next = ( 'Nächste' | 'Nächsten' | 'Nächstes' | 'nächste' | 'nächsten' | 'nächstes' );
 	
 	monday = ( 'Montag' | 'montag' | 'Mo' | 'mo' );
-	thuesday = ( 'Dienstag' | 'dienstag' | 'Di' | 'di' );
+	tuesday = ( 'Dienstag' | 'dienstag' | 'Di' | 'di' );
 	wednesday = ( 'Mittwoch' | 'mittwoch' | 'Mi' | 'mi' );
-	tuersday = ( 'Donnerstag' | 'donnerstag' | 'Do' | 'do' );
+	thursday = ( 'Donnerstag' | 'donnerstag' | 'Do' | 'do' );
 	friday = ( 'Freitag' | 'freitag' | 'Fr' | 'fr' );
 	saturday = ( 'Samstag' | 'samstag' | 'Sa' | 'sa' );
 	sunday = ( 'Sonntag' | 'sonntag' | 'So' | 'so' );
@@ -79,7 +79,7 @@ absolute {-> date} =
 	{latin}		[date]:date {-> New date.latin([date.number]) }
 |	{january}	[date]:P.number T.january [year]:T.number? {-> New date.january([date.number, year]) }
 |	{february}	[date]:P.number T.february [year]:T.number? {-> New date.february([date.number, year]) }
-|	{march}		[date]:P.number T.dot T.march [year]:T.number? {-> New date.march([date.number, year]) }
+|	{march}		[date]:P.number T.march [year]:T.number? {-> New date.march([date.number, year]) }
 |	{april}		[date]:P.number T.april [year]:T.number? {-> New date.april([date.number, year]) }
 |	{may}		[date]:P.number T.may [year]:T.number? {-> New date.may([date.number, year]) }
 |	{june}		[date]:P.number T.june [year]:T.number? {-> New date.june([date.number, year]) }
@@ -111,9 +111,9 @@ relative {-> relative} =
 
 workingday { -> relative } =
 	{monday} 	monday		{-> New relative.monday() }
-|	{thuesday}	thuesday	{-> New relative.thuesday() }
+|	{tuesday}	tuesday	{-> New relative.tuesday() }
 |	{wednesday}	wednesday	{-> New relative.wednesday() }
-|	{tuersday}	tuersday	{-> New relative.tuersday() }
+|	{thursday}	thursday	{-> New relative.thursday() }
 |	{friday}	friday		{-> New relative.friday() }
 ;
 
@@ -137,9 +137,9 @@ entry =
 
 relative =
 	{monday}	
-|	{thuesday}	
+|	{tuesday}	
 |	{wednesday}	
-|	{tuersday}	
+|	{thursday}	
 |	{friday}	
 |	{saturday}	
 |	{sunday}	
