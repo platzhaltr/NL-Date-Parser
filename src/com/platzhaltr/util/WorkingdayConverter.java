@@ -15,6 +15,20 @@ public class WorkingdayConverter {
 		return 0;
 	}
 
+	public static Date createDate(int dayOfWeek) {
+		GregorianCalendar cal = new GregorianCalendar();
+		int currentDayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
+
+		if (dayOfWeek == currentDayOfWeek) {
+			cal.add(Calendar.DAY_OF_WEEK, 7);
+		} else {
+			cal.add(Calendar.DAY_OF_WEEK,
+					(7 + (dayOfWeek - currentDayOfWeek)) % 7);
+		}
+
+		return cal.getTime();
+	}
+
 	public static Date createDate(int day, int month, int year, int currentYear) {
 		GregorianCalendar cal = new GregorianCalendar();
 

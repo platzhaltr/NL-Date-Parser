@@ -23,7 +23,9 @@ import com.platzhaltr.util.date.node.AMonthRelative;
 import com.platzhaltr.util.date.node.ANextEntry;
 import com.platzhaltr.util.date.node.ANovemberDate;
 import com.platzhaltr.util.date.node.AOctoberDate;
+import com.platzhaltr.util.date.node.ASaturdayRelative;
 import com.platzhaltr.util.date.node.ASeptemberDate;
+import com.platzhaltr.util.date.node.ASundayRelative;
 import com.platzhaltr.util.date.node.AThursdayRelative;
 import com.platzhaltr.util.date.node.ATuesdayRelative;
 import com.platzhaltr.util.date.node.AWednesdayRelative;
@@ -46,11 +48,11 @@ public class Translation extends DepthFirstAdapter {
 
 		if (nextNode instanceof AMondayRelative) {
 
-		} else if ( nextNode instanceof ATuesdayRelative ) {
+		} else if (nextNode instanceof ATuesdayRelative) {
 
 		} else if (nextNode instanceof AWednesdayRelative) {
 
-		} else if ( nextNode instanceof AThursdayRelative ) {
+		} else if (nextNode instanceof AThursdayRelative) {
 
 		} else if (nextNode instanceof AFridayRelative) {
 
@@ -167,6 +169,55 @@ public class Translation extends DepthFirstAdapter {
 		}
 
 		return WorkingdayConverter.createDate(day, month, year, currentYear);
+	}
+
+	@Override
+	public void inAMondayRelative(AMondayRelative node) {
+		super.inAMondayRelative(node);
+		final int dayOfWeek = Calendar.MONDAY;
+		result = WorkingdayConverter.createDate(dayOfWeek);
+	}
+
+	@Override
+	public void inATuesdayRelative(ATuesdayRelative node) {
+		super.inATuesdayRelative(node);
+		final int dayOfWeek = Calendar.TUESDAY;
+		result = WorkingdayConverter.createDate(dayOfWeek);
+	}
+
+	@Override
+	public void inAWednesdayRelative(AWednesdayRelative node) {
+		super.inAWednesdayRelative(node);
+		final int dayOfWeek = Calendar.WEDNESDAY;
+		result = WorkingdayConverter.createDate(dayOfWeek);
+	}
+
+	@Override
+	public void inAThursdayRelative(AThursdayRelative node) {
+		super.inAThursdayRelative(node);
+		final int dayOfWeek = Calendar.THURSDAY;
+		result = WorkingdayConverter.createDate(dayOfWeek);
+	}
+
+	@Override
+	public void inAFridayRelative(AFridayRelative node) {
+		super.inAFridayRelative(node);
+		final int dayOfWeek = Calendar.FRIDAY;
+		result = WorkingdayConverter.createDate(dayOfWeek);
+	}
+
+	@Override
+	public void inASaturdayRelative(ASaturdayRelative node) {
+		super.inASaturdayRelative(node);
+		final int dayOfWeek = Calendar.SATURDAY;
+		result = WorkingdayConverter.createDate(dayOfWeek);
+	}
+
+	@Override
+	public void inASundayRelative(ASundayRelative node) {
+		super.inASundayRelative(node);
+		final int dayOfWeek = Calendar.SUNDAY;
+		result = WorkingdayConverter.createDate(dayOfWeek);
 	}
 
 	public Date getResult() {
