@@ -15,7 +15,7 @@ Helpers
 	december = ( 'Dezember' | 'dezember' | 'Dez' | 'dez' );
 
 Tokens 
-	next = ( 'Nächste' | 'Nächsten' | 'Nächstes' | 'nächste' | 'nächsten' | 'nächstes' );
+	next = ( 'Nächste' | 'Nächsten' | 'Nächstes' | 'Nächster' | 'nächste' | 'nächsten' | 'nächstes' | 'nächster' );
 	
 	monday = ( 'Montag' | 'montag' | 'Mo' | 'mo' );
 	tuesday = ( 'Dienstag' | 'dienstag' | 'Di' | 'di' );
