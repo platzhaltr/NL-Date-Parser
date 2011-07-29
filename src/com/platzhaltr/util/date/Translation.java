@@ -40,32 +40,6 @@ public class Translation extends DepthFirstAdapter {
 	private Date result;
 
 	@Override
-	public void inANextEntry(ANextEntry node) {
-		// TODO Auto-generated method stub
-		super.inANextEntry(node);
-
-		Node nextNode = node.getRelative();
-
-		if (nextNode instanceof AMondayRelative) {
-
-		} else if (nextNode instanceof ATuesdayRelative) {
-
-		} else if (nextNode instanceof AWednesdayRelative) {
-
-		} else if (nextNode instanceof AThursdayRelative) {
-
-		} else if (nextNode instanceof AFridayRelative) {
-
-		} else if (nextNode instanceof AWeekendRelative) {
-
-		} else if (nextNode instanceof AMonthRelative) {
-
-		} else if (nextNode instanceof AYearRelative) {
-
-		}
-	}
-
-	@Override
 	public void inALatinDate(ALatinDate node) {
 		super.inALatinDate(node);
 
