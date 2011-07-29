@@ -5,8 +5,10 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.List;
 
+import com.platzhaltr.util.WorkingdayConverter;
 import com.platzhaltr.util.date.analysis.DepthFirstAdapter;
 import com.platzhaltr.util.date.node.AFridayRelative;
+import com.platzhaltr.util.date.node.AJanuaryDate;
 import com.platzhaltr.util.date.node.ALatinDate;
 import com.platzhaltr.util.date.node.AMondayRelative;
 import com.platzhaltr.util.date.node.AMonthRelative;
@@ -58,23 +60,37 @@ public class Translation extends DepthFirstAdapter {
 
 		int day = Integer.parseInt( numbers.get( 0 ).toString().trim() );
 		int month = Integer.parseInt( numbers.get( 1 ).toString().trim() );
-		int year = cal.get( Calendar.YEAR );
 
-		TNumber yearTNumber = numbers.size() == 3 ? numbers.get( 2 ) : null;
+		int currentYear = cal.get( Calendar.YEAR );
+		int year = currentYear;
 
-		if ( yearTNumber == null ) {
-			if ( month < cal.get( Calendar.MONTH + 1 ) || day < cal.get( Calendar.DAY_OF_MONTH ) ) {
-				year += 1;
-			}
-		} else {
-			year = Integer.parseInt( yearTNumber.toString().trim() );
+		if ( numbers.size() == 3 ) {
+			year = Integer.parseInt( numbers.get( 2 ).toString().trim() );
 		}
 
-		GregorianCalendar resultCal = new GregorianCalendar();
-		resultCal.set( year, month - 1, day );
+		month -= 1;
 
-		result = resultCal.getTime();
+		result = WorkingdayConverter.createDate( day, month, year, currentYear );
 
+	}
+
+	@Override
+	public void inAJanuaryDate( AJanuaryDate node ) {
+		super.inAJanuaryDate( node );
+
+		List<TNumber> numbers = node.getNumber();
+
+		int day = Integer.parseInt( numbers.get( 0 ).toString().trim() );
+		int month = Calendar.JANUARY;
+
+		int currentYear = cal.get( Calendar.YEAR );
+		int year = cal.get( Calendar.YEAR );
+
+		if ( numbers.size() == 2 ) {
+			year = Integer.parseInt( numbers.get( 1 ).toString().trim() );
+		}
+
+		result = WorkingdayConverter.createDate( day, month, year, currentYear );
 	}
 
 	public Date getResult() {
