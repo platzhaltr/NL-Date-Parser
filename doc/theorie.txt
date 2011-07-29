@@ -57,6 +57,13 @@ Am letzten Freitag im Monat
 Ab morgen eine Woche Urlaub
 Ab morgen für 2 Tage Urlaub
 
+Nächsten Montag und Mittwoch
+Nächsten Montag, Mittwoch, Freitag
+Nächsten Montag bis Donnerstag
+Nächstes Wochenende ist damit Spezialfall
+=> Range, DaySelection 
+
+
 Wiederholende Zeitangaben
 =========================
 
