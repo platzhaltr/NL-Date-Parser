@@ -14,15 +14,15 @@
 3. To generate the sources I use the command line `mvn sablecc:generate`
 4. Update the project configuration
 
-### Commandline ###
+### Command-line ###
 
 	mvn sablecc:generate package
 
 ### Known Problems ###
 
 #### parser.dat not found ####
-In case you get a "ParserException: parser.dat not found" during execution, please have a look at the source directory `target/generated-sources/sablecc`. During the automatic build Eclipse actives an include-filter for the build path which includes all java-files only `**/*.java`. Please either remove the filter or add another filter which includes the parser.dat as well.
 
+In case you get a `ParserException: parser.dat not found` during execution, please have a look at the source directory `target/generated-sources/sablecc`. During the automatic build Eclipse actives an include-filter for the build path which includes all java-files only `**/*.java`. Please either remove the filter or add another filter which includes the `parser.dat` as well. You can do so under `Build Path > Configure Build Path ... > Java Build Path > Source`. Under each source folder you can edit the appropriate inclusion (and exclusion filter).
 	
 ## Theorie ##
 
