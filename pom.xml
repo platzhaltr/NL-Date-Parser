@@ -1,10 +1,26 @@
 <?xml version="1.0"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.platzhaltr</groupId>
 	<artifactId>nlp.date</artifactId>
 	<version>0.1-SNAPSHOT</version>
+	<name>NLP Date Parser</name>
+	<inceptionYear>2011</inceptionYear>
+	<developers>
+		<developer>
+			<id>mazlo</id>
+			<name>Matth&#xE4;us Zloch</name>
+		</developer>
+		<developer>
+			<id>oschrenk</id>
+			<name>Oliver Schrenk</name>
+			<email>oliver.schrenk@gmail.com</email>
+		</developer>
+	</developers>
+	<organization>
+		<name>platzhaltr.com</name>
+		<url>http://www.platzhaltr.com</url>
+	</organization>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
